@@ -124,6 +124,11 @@ footer a:hover{color:var(--ink)}
  section{padding:72px 0}
 }
 @media(max-width:560px){.pl{grid-template-columns:1fr}.hero .cta .btn{width:100%;justify-content:center}}
+.hc{display:grid;gap:14px;margin-top:28px;max-width:560px}
+.hc a{display:flex;gap:16px;align-items:center;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,200,61,.45);border-radius:18px;padding:16px 18px;color:#fff;text-decoration:none;transition:transform .2s,background .2s}
+.hc a:hover{transform:translateY(-2px);background:rgba(255,200,61,.12)}
+.hc .ic{flex:none;width:54px;height:54px;border-radius:14px;display:grid;place-items:center;font-size:28px;background:rgba(255,200,61,.18)}
+.hc b{display:block;font-size:19px;letter-spacing:.3px}.hc small{display:block;opacity:.8;font-size:14.5px;margin-top:3px}.hc em{display:block;font-style:normal;color:#FFC83D;font-weight:800;font-size:15px;margin-top:6px}
 </style></head>
 <body>
 <nav id="nav"><div class="c">
@@ -137,8 +142,11 @@ footer a:hover{color:var(--ink)}
   <span class="tag"><i></i>ĐẠI LÊ AI</span>
   <h1>Tự làm ra sản phẩm với <em>AI</em>, ngay cả khi bạn không phải lập trình viên</h1>
   <p class="lead">Đại giúp người kinh doanh một mình biến công việc lặp lại thành hệ thống chạy tự động: chatbot trả lời khách, app riêng, nội dung đều đặn. Cầm tay chỉ việc, dễ làm và tiết kiệm thời gian.</p>
-  <div class="cta"><a class="btn g" href="#khoa-hoc">Xem khoá học →</a><a class="btn o" href="https://zalo.me/g/a9my3sx1ov0fsihenx6e" target="_blank" rel="noopener">Vào nhóm Zalo miễn phí</a></div>
-  <div class="chips"><span>🤖 Chatbot Zalo & Facebook</span><span>⚡ Tự động hoá công việc</span><span>📱 Làm app không cần code</span><span>🧠 Bộ não thứ hai</span></div>
+  <div class="hc">
+   <a href="https://hoc.lequydai.com/dang-ky/"><span class="ic">⚙️</span><div><b>VẬN HÀNH AGENT</b><small>Đội nhân viên AI tự làm việc cho bạn · 16 bài</small><em>1.990.000đ · Xem trang khoá học →</em></div></a>
+   <a href="https://hoc.lequydai.com/vibe-coding/dang-ky/"><span class="ic">🤖</span><div><b>28 NGÀY VIBE CODING</b><small>Tự làm bot trả lời khách Zalo & Facebook</small><em>2.990.000đ · Xem trang khoá học →</em></div></a>
+  </div>
+  <div class="cta" style="margin-top:18px"><a class="btn o" href="https://zalo.me/g/a9my3sx1ov0fsihenx6e" target="_blank" rel="noopener">Vào nhóm Zalo miễn phí</a></div>
  </div>
  <div class="ph">
   <div class="frame"><img src="/img/dai-hero.jpg" alt="Đại Lê đang làm việc với AI"></div>
