@@ -263,4 +263,27 @@ const n=document.getElementById('nav');const f=()=>n.classList.toggle('s',scroll
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
 </script>
+<style>
+#lgm{position:fixed;inset:0;background:rgba(7,13,32,.72);display:none;align-items:center;justify-content:center;z-index:99;padding:16px}
+#lgm.on{display:flex}
+#lgm .bx{background:#fff;border-radius:18px;max-width:380px;width:100%;padding:26px 24px;color:var(--ink);box-shadow:0 30px 80px rgba(0,0,0,.45)}
+#lgm h3{margin:0 0 4px;font-size:22px}#lgm p{margin:0 0 14px;color:var(--mut);font-size:14px}
+#lgm input{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;font-size:16px;margin-bottom:10px;font-family:inherit}
+#lgm button.go{width:100%;background:var(--gold);color:var(--navy);font-weight:900;border:0;border-radius:10px;padding:14px;font-size:16px;cursor:pointer}
+#lgm .er{color:#c62828;font-size:14px;min-height:18px;margin-bottom:6px}
+#lgm .x{float:right;background:none;border:0;font-size:22px;cursor:pointer;color:var(--mut)}
+</style>
+<div id="lgm"><div class="bx"><button class="x" type="button" aria-label="Đóng">×</button><h3>Đăng nhập học</h3><p>Một tài khoản dùng cho tất cả khoá học. Admin xem được mọi khoá.</p>
+<form id="lgf"><input name="email" type="email" placeholder="Email" autocomplete="username" required><input name="pw" type="password" placeholder="Mật khẩu" autocomplete="current-password" required><div class="er" id="lge"></div><button class="go" type="submit">VÀO HỌC</button></form>
+<p style="margin:12px 0 0"><a href="https://hoc.lequydai.com/#lf" style="color:var(--navy3)">Quên mật khẩu?</a></p></div></div>
+<script src="https://hoc.lequydai.com/config.js"></script>
+<script>
+(function(){var m=document.getElementById('lgm'),f=document.getElementById('lgf'),e=document.getElementById('lge');
+function open(ev){if(ev)ev.preventDefault();m.classList.add('on');setTimeout(function(){f.email.focus()},50)}
+document.querySelectorAll('a[href$="hoc.lequydai.com/#lf"]').forEach(function(a){if(/Quên/.test(a.textContent))return;a.addEventListener('click',open)});
+m.querySelector('.x').onclick=function(){m.classList.remove('on')};m.addEventListener('click',function(ev){if(ev.target===m)m.classList.remove('on')});
+f.addEventListener('submit',function(ev){ev.preventDefault();e.textContent='Đang kiểm tra…';var b=f.querySelector('.go');b.disabled=true;
+fetch(window.API_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'login',email:f.email.value.trim(),password:f.pw.value})}).then(function(r){return r.json()}).then(function(j){b.disabled=false;
+if(!j.ok){e.textContent=j.msg||'Không đăng nhập được';return}location.href='https://hoc.lequydai.com/#t='+j.token}).catch(function(){b.disabled=false;e.textContent='Lỗi kết nối, thử lại sau.'})})})();
+</script>
 </body></html>
