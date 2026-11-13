@@ -88,6 +88,21 @@ BAI = [
   o=['zaloai','vibe']),
 ]
 
+KH = [
+ dict(slug='kh-van-hanh-agent', cd=CHU_DE[3], url='/van-hanh/', tieu_de='Khoá VẬN HÀNH AGENT: dựng trợ lý AI tự làm việc theo não của bạn',
+  mo_ta='16 bài cầm tay chỉ việc: cài NAOSO, dựng đội nhân viên AI, hẹn giờ cho AI tự làm, chatbot khách hàng, chạy 24/7 với tên miền riêng.',
+  bia='Khoá VẬN HÀNH AGENT|trợ lý AI tự làm|việc mỗi ngày', anh='dai-cuoi-3.jpg'),
+ dict(slug='kh-28-ngay-vibe-coding', cd=CHU_DE[4], url='/vibe-coding/', tieu_de='Khoá 28 NGÀY VIBE CODING: tự làm bot chăm khách Zalo, Facebook bằng AI',
+  mo_ta='28 ngày tự tay làm bot chăm sóc khách trả lời tự động trên Zalo và Facebook bằng AI, không cần biết code.',
+  bia='28 ngày Vibe Coding|tự làm chatbot|không cần code', anh='dai-cuoi.jpg'),
+ dict(slug='kh-lam-video-khong-len-hinh', cd=CHU_DE[2], url='https://hoc.lequydai.com/khong-len-hinh/dang-ky/', tieu_de='Khoá LÀM VIDEO KHÔNG CẦN LÊN HÌNH: thu âm giọng là có video mỗi ngày',
+  mo_ta='Thu âm giọng, ghép hình quay sẵn, video Veo 3 và nguồn miễn phí thành video đăng mỗi ngày. 14 bài đi từng bước.',
+  bia='Làm video|không cần lên hình|đăng mỗi ngày', anh='dai-cuoi-3.jpg'),
+ dict(slug='kh-khoa-tang-video-ai', cd=CHU_DE[2], url='https://hoc.lequydai.com/tang/dang-ky/', tieu_de='Khoá tặng miễn phí: làm video AI đầu tiên trong 30 phút',
+  mo_ta='10 bài ngắn làm video AI có tiếng nói với ChatGPT hoặc Gemini và Google Flow, kèm 50 câu lệnh cho 10 ngành. Miễn phí.',
+  bia='Khoá tặng miễn phí|video AI đầu tiên|trong 30 phút', anh='dai-cuoi.jpg'),
+]
+
 def o_html(k):
     kieu, h, p, nut, url = O[k]
     return f'<aside class="o-qua {kieu}"><h2>{h}</h2><p>{p}</p><a class="nut" href="{url}">{nut}</a></aside>'
@@ -122,9 +137,9 @@ for b in BAI:
     os.makedirs(f'{D}/{b["slug"]}', exist_ok=True)
     open(f'{D}/{b["slug"]}/index.html', 'w').write(trang(b))
 
-ds = [{k: b[k] for k in ('slug', 'cd', 'tieu_de', 'mo_ta', 'ngay')} for b in BAI]
+ds = [{k: b[k] for k in ('slug', 'cd', 'tieu_de', 'mo_ta', 'ngay')} for b in BAI] + [{'slug': k['slug'], 'cd': k['cd'], 'tieu_de': k['tieu_de'], 'mo_ta': k['mo_ta'], 'url': k['url'], 'loai': 'Khoá học'} for k in KH]
 open(f'{D}/ds.js', 'w').write('window.BAI_VIET=' + json.dumps(ds, ensure_ascii=False) + ';')
-json.dump([{k: b[k] for k in ('slug', 'bia', 'anh', 'cd')} for b in BAI], open('/tmp/bia.json', 'w'), ensure_ascii=False)
+json.dump([{k: b[k] for k in ('slug', 'bia', 'anh', 'cd')} for b in BAI + KH], open('/tmp/bia.json', 'w'), ensure_ascii=False)
 
 loc = ''.join(f'<button data-cd="{c}">{c}</button>' for c in CHU_DE)
 open(f'{D}/index.html', 'w').write(f'''<!DOCTYPE html>
@@ -139,9 +154,9 @@ open(f'{D}/index.html', 'w').write(f'''<!DOCTYPE html>
 <div class="loc"><button class="on" data-cd="">Tất cả</button>{loc}</div>
 <div class="luoi luoi-3" id="ds"></div>
 </div></main>{CHAN}
-<script src="/bai-viet/ds.js?v=1"></script>
+<script src="/bai-viet/ds.js?v=2"></script>
 <script>
-function ve(cd){{document.getElementById('ds').innerHTML=BAI_VIET.filter(function(b){{return !cd||b.cd===cd}}).map(function(b){{return '<a class="the-bai" href="/bai-viet/'+b.slug+'/"><img src="/bai-viet/anh/'+b.slug+'.jpg" alt="" loading="lazy"><div class="nd"><span class="nhan">'+b.cd+'</span><h3>'+b.tieu_de+'</h3><p>'+b.mo_ta+'</p></div></a>'}}).join('')||'<p class="phu">Chủ đề này sắp có bài, bạn quay lại sau nhé.</p>'}}
+function ve(cd){{document.getElementById('ds').innerHTML=BAI_VIET.filter(function(b){{return !cd||b.cd===cd}}).map(function(b){{return '<a class="the-bai" href="'+(b.url||'/bai-viet/'+b.slug+'/')+'"><img src="/bai-viet/anh/'+b.slug+'.jpg" alt="" loading="lazy"><div class="nd"><span class="nhan">'+(b.loai?'Khoá học · ':'')+b.cd+'</span><h3>'+b.tieu_de+'</h3><p>'+b.mo_ta+'</p></div></a>'}}).join('')||'<p class="phu">Chủ đề này sắp có bài, bạn quay lại sau nhé.</p>'}}
 document.querySelectorAll('.loc button').forEach(function(x){{x.onclick=function(){{document.querySelectorAll('.loc button').forEach(function(y){{y.classList.remove('on')}});x.classList.add('on');ve(x.dataset.cd)}}}});ve('');
 </script></body></html>''')
 print('ok', len(BAI))

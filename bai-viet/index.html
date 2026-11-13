@@ -17,8 +17,8 @@
 <a href="/#san-pham">Sản phẩm</a><a href="/#khoa-hoc">Khoá học</a><a href="https://congcu.lequydai.com">Công cụ</a><a href="/bai-viet/">Blog</a><a href="https://hoc.lequydai.com">Học viên</a><a href="https://zalo.me/0972782782">Zalo 0972 782 782</a><a href="/dieu-khoan/">Điều khoản</a><a href="/chinh-sach-bao-mat/">Chính sách bảo mật</a>
 <span style="width:100%">© 2026 lequydai.com</span></div></footer>
 <div class="thanh"><span>Công cụ miễn phí, hỏi đáp trực tiếp</span><a class="nut nut-nho" href="https://zalo.me/g/a9my3sx1ov0fsihenx6e">Nhóm Zalo</a></div>
-<script src="/bai-viet/ds.js?v=1"></script>
+<script src="/bai-viet/ds.js?v=2"></script>
 <script>
-function ve(cd){document.getElementById('ds').innerHTML=BAI_VIET.filter(function(b){return !cd||b.cd===cd}).map(function(b){return '<a class="the-bai" href="/bai-viet/'+b.slug+'/"><img src="/bai-viet/anh/'+b.slug+'.jpg" alt="" loading="lazy"><div class="nd"><span class="nhan">'+b.cd+'</span><h3>'+b.tieu_de+'</h3><p>'+b.mo_ta+'</p></div></a>'}).join('')||'<p class="phu">Chủ đề này sắp có bài, bạn quay lại sau nhé.</p>'}
+function ve(cd){document.getElementById('ds').innerHTML=BAI_VIET.filter(function(b){return !cd||b.cd===cd}).map(function(b){return '<a class="the-bai" href="'+(b.url||'/bai-viet/'+b.slug+'/')+'"><img src="/bai-viet/anh/'+b.slug+'.jpg" alt="" loading="lazy"><div class="nd"><span class="nhan">'+(b.loai?'Khoá học · ':'')+b.cd+'</span><h3>'+b.tieu_de+'</h3><p>'+b.mo_ta+'</p></div></a>'}).join('')||'<p class="phu">Chủ đề này sắp có bài, bạn quay lại sau nhé.</p>'}
 document.querySelectorAll('.loc button').forEach(function(x){x.onclick=function(){document.querySelectorAll('.loc button').forEach(function(y){y.classList.remove('on')});x.classList.add('on');ve(x.dataset.cd)}});ve('');
 </script></body></html>

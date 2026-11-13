@@ -187,10 +187,10 @@
 
 <div class="thanh"><span>Công cụ miễn phí, hỏi đáp trực tiếp</span><a class="nut nut-nho" href="https://zalo.me/g/a9my3sx1ov0fsihenx6e">Nhóm Zalo</a></div>
 
-<script src="/bai-viet/ds.js?v=1"></script>
+<script src="/bai-viet/ds.js?v=2"></script>
 <script>
 (function(){var el=document.getElementById('bai-moi');if(!el||!window.BAI_VIET)return;
-el.innerHTML=BAI_VIET.slice(0,3).map(function(b){return '<a class="the-bai" href="/bai-viet/'+b.slug+'/"><img src="/bai-viet/anh/'+b.slug+'.jpg" alt="" loading="lazy"><div class="nd"><span class="nhan">'+b.cd+'</span><h3>'+b.tieu_de+'</h3><p>'+b.mo_ta+'</p></div></a>'}).join('');})();
+el.innerHTML=BAI_VIET.filter(function(b){return !b.url}).slice(0,3).map(function(b){return '<a class="the-bai" href="/bai-viet/'+b.slug+'/"><img src="/bai-viet/anh/'+b.slug+'.jpg" alt="" loading="lazy"><div class="nd"><span class="nhan">'+b.cd+'</span><h3>'+b.tieu_de+'</h3><p>'+b.mo_ta+'</p></div></a>'}).join('');})();
 </script>
 </body>
 </html>
