@@ -136,3 +136,35 @@ p{margin:0 0 14px}
 .loc{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 32px}
 .loc button{font:600 14px var(--sans);background:var(--trang);border:1px solid var(--vien-dam);border-radius:999px;padding:9px 16px;cursor:pointer;color:var(--chu)}
 .loc button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+/* ===== Trang sản phẩm / công cụ ===== */
+.sp{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}
+@media(max-width:900px){.sp{grid-template-columns:1fr;gap:32px}}
+.ds-tick{list-style:none;padding:0;margin:18px 0}
+.ds-tick li{position:relative;padding-left:32px;margin:10px 0}
+.ds-tick li:before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:var(--vang);color:var(--navy);font-size:13px;font-weight:700;display:grid;place-items:center}
+.gia-to{font-family:var(--serif);font-size:28px;color:var(--navy);margin:18px 0 6px}
+.bang{background:var(--trang);border:1px solid var(--vien);border-radius:14px;padding:10px;box-shadow:0 18px 50px rgba(4,20,49,.08)}
+.bang .dong{display:flex;align-items:center;gap:14px;padding:14px;border-bottom:1px solid var(--vien)}
+.bang .dong:last-child{border-bottom:0}
+.bang .dong .i{width:42px;height:42px;border-radius:10px;background:var(--kem);display:grid;place-items:center;font-size:20px;flex:none}
+.bang .dong b{display:block;color:var(--navy);font-size:15px}
+.bang .dong small{color:var(--mo);font-size:13px}
+.bang .dong em{margin-left:auto;font-style:normal;font-size:12px;font-weight:700;color:var(--navy);background:var(--vang-nhat);padding:5px 9px;border-radius:6px;white-space:nowrap}
+.vid{border-radius:14px;overflow:hidden;border:1px solid var(--vien);margin-bottom:18px;background:#000}
+.vid video{width:100%;display:block}
+.the-cc{text-decoration:none;color:inherit}
+.the-cc .nhan{margin-bottom:8px}
+.the-cc h3{font-family:var(--sans);font-weight:700;font-size:20px;letter-spacing:0}
+.the-cc .y{color:var(--gach);font-weight:600;font-size:15px;margin:2px 0 8px}
+.mo-dau.trai{text-align:left;padding:72px 0 80px}
+.mo-dau.trai h1{margin:0 0 20px;font-size:clamp(38px,5.4vw,64px)}
+.mo-dau.trai .phu{margin:0 0 26px}
+.nhanh{display:grid;gap:12px;margin-top:8px}
+.nhanh a{display:flex;align-items:center;gap:14px;background:var(--trang);border:1px solid var(--vien);border-radius:12px;padding:14px 16px;text-decoration:none;color:inherit}
+.nhanh a:hover{border-color:var(--vien-dam)}
+.nhanh .i{font-size:24px}
+.nhanh b{display:block;color:var(--navy)}
+.nhanh small{color:var(--mo)}
+.nhanh .g{margin-left:auto;font-weight:700;color:var(--gach);font-size:14px;white-space:nowrap}
+.anh-khung{border-radius:18px;overflow:hidden;border:1px solid var(--vien);aspect-ratio:4/5}
+.anh-khung img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}

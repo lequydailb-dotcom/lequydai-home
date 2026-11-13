@@ -1,239 +1,179 @@
-<!doctype html>
-<html lang="vi"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CÔNG CỤ AI | ĐẠI LÊ AI</title>
-<meta name="description" content="Công cụ AI chạy sẵn cho người kinh doanh một mình: NAOSO trợ lý AI làm việc theo não của bạn, Zalo AI bot soạn tin trả lời khách trên Zalo, app GIỌNG dán chữ là có giọng đọc.">
-<meta property="og:title" content="CÔNG CỤ AI | ĐẠI LÊ AI">
-<meta property="og:description" content="Dễ làm, tự động, tiết kiệm thời gian. Khoá học và công cụ AI cầm tay chỉ việc của Đại Lê.">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Công cụ AI chạy sẵn – ĐẠI LÊ AI</title>
+<meta name="description" content="Công cụ AI chạy sẵn cho người kinh doanh một mình: NAOSO trợ lý AI, Zalo AI trả lời khách, App GIỌNG, và 4 công cụ miễn phí.">
+<meta property="og:title" content="Công cụ AI chạy sẵn – ĐẠI LÊ AI">
+<meta property="og:description" content="Việc lặp lại để máy làm thay bạn. Dễ dùng, chạy tự động, tiết kiệm thời gian.">
 <meta property="og:image" content="https://lequydai.com/img/hero.jpg?v=20261105">
 <link rel="icon" href="https://lequydai.com/img/cover-square.jpg?v=20261105">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#0b1533;--navy2:#13244f;--navy3:#1b3270;--gold:#FFC83D;--gold2:#ffb703;--ink:#141b2f;--mut:#5d6785;--bg:#f5f7fc;--line:#e3e8f2;--ok:#16a34a}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Be Vietnam Pro',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.c{max-width:1180px;margin:auto;padding:0 22px}
-/* NAV */
-nav{position:fixed;inset:0 0 auto;z-index:50;transition:.25s}
-nav.s{background:rgba(11,21,51,.92);backdrop-filter:blur(10px);box-shadow:0 4px 24px rgba(0,0,0,.25)}
-nav .c{display:flex;align-items:center;gap:28px;height:68px}
-nav .logo img{height:30px}
-nav .lk{display:flex;gap:26px;margin-left:auto}
-nav .lk a{color:#d5ddf5;font-weight:600;font-size:15px}
-nav .lk a:hover{color:#fff}
-.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:16px;padding:14px 26px;border-radius:12px;transition:.2s;cursor:pointer;border:0;font-family:inherit}
-.btn.g{background:var(--gold);color:var(--navy);box-shadow:0 8px 24px rgba(255,200,61,.35)}
-.btn.g:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,200,61,.45)}
-.btn.o{border:1.5px solid rgba(255,255,255,.35);color:#fff}
-.btn.o:hover{background:rgba(255,255,255,.08)}
-.btn.sm{padding:10px 18px;font-size:14px;border-radius:10px}
-/* HERO */
-.hero{background:radial-gradient(1200px 600px at 85% 10%,rgba(255,200,61,.16),transparent 60%),radial-gradient(900px 600px at 0% 100%,rgba(70,110,255,.25),transparent 60%),linear-gradient(160deg,var(--navy),var(--navy2) 60%,var(--navy3));color:#fff;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(180deg,#000,transparent 85%)}
-.hero .c{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:130px;padding-bottom:90px}
-.tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,200,61,.12);border:1px solid rgba(255,200,61,.35);color:var(--gold);font-weight:700;font-size:14px;padding:7px 14px;border-radius:30px}
-.tag i{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(255,200,61,.2)}
-.hero h1{font-size:clamp(34px,5.2vw,60px);line-height:1.12;font-weight:900;margin:20px 0 18px;letter-spacing:-.5px}
-.hero h1 em{font-style:normal;color:var(--gold)}
-.hero p.lead{font-size:clamp(16px,1.6vw,19px);color:#c9d4f2;max-width:600px}
-.hero .cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
-.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
-.chips span{font-size:14px;color:#dfe6fb;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:7px 13px;border-radius:9px}
-.ph{position:relative}
-.ph .frame{border-radius:26px;overflow:hidden;border:1px solid rgba(255,255,255,.15);box-shadow:0 30px 80px rgba(0,0,0,.45);aspect-ratio:4/5}
-.ph .frame img{width:100%;height:100%;object-fit:cover}
-.ph .fl{position:absolute;background:#fff;color:var(--ink);border-radius:14px;padding:12px 16px;box-shadow:0 14px 40px rgba(0,0,0,.25);font-size:14px;font-weight:700;display:flex;gap:10px;align-items:center;animation:fl 5s ease-in-out infinite}
-.ph .fl b{display:block;font-size:12px;color:var(--mut);font-weight:600}
-.ph .fl .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-size:18px;flex:none}
-.ph .f1{left:-34px;top:16%}.ph .f1 .ic{background:#e8f6ee}
-.ph .f2{right:-24px;bottom:14%;animation-delay:-2.5s}.ph .f2 .ic{background:#fff4d6}
-@keyframes fl{50%{transform:translateY(-10px)}}
-/* SECTIONS */
-section{padding:96px 0}
-.eyebrow{color:var(--gold2);font-weight:800;font-size:14px;letter-spacing:1.5px;text-transform:uppercase}
-.h2{font-size:clamp(28px,3.6vw,42px);line-height:1.2;font-weight:900;margin:10px 0 14px;letter-spacing:-.3px}
-.sub{color:var(--mut);font-size:17px;max-width:680px}
-.center{text-align:center}.center .sub{margin:auto}
-/* PILLARS */
-.pl{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px}
-.pl div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 22px;transition:.25s}
-.pl div:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(13,24,56,.1);border-color:#d3dbef}
-.pl .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:26px;background:linear-gradient(135deg,#fff3cf,#ffe08a);margin-bottom:16px}
-.pl h3{font-size:18px;line-height:1.35;margin-bottom:8px}
-.pl p{color:var(--mut);font-size:15px}
-/* COURSES */
-.dark{background:linear-gradient(170deg,var(--navy),var(--navy2));color:#fff}
-.dark .sub{color:#b9c5e8}
-.cs{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:46px}
-.co{background:#fff;color:var(--ink);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:.25s}
-.co:hover{transform:translateY(-6px);box-shadow:0 26px 60px rgba(0,0,0,.35)}
-.co img{width:100%}
-.co .bd{padding:24px 26px 26px;display:flex;flex-direction:column;flex:1}
-.co .mt{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
-.co .mt span{font-size:13px;font-weight:700;background:#eef2fb;color:var(--navy3);padding:4px 10px;border-radius:7px}
-.co h3{font-size:23px;line-height:1.3}
-.co p{color:var(--mut);margin:8px 0 14px;flex:1}
-.co ul{list-style:none;margin-bottom:18px}
-.co li{padding-left:26px;position:relative;font-size:15px;margin:6px 0}
-.co li:before{content:"✓";position:absolute;left:0;top:0;color:var(--ok);font-weight:900}
-.co .ft{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px}
-.co .pr{font-size:22px;font-weight:900;color:#D32F2F}
-.co .pr small{display:block;font-size:12px;color:var(--mut);font-weight:600}
-.login{margin-top:30px;text-align:center;color:#c9d4f2}
-.login a{color:var(--gold);font-weight:800;text-decoration:underline}
-.vids{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:40px}.vids .vc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:14px}.vids video{width:100%;display:block;border-radius:12px;aspect-ratio:16/9;background:#000}.vids .vt{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 6px 4px;flex-wrap:wrap}.vids .vt a{color:var(--gold);font-weight:800}@media(max-width:960px){.vids{grid-template-columns:1fr}}
-/* APP */
-.app{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:26px;padding:44px;box-shadow:0 20px 50px rgba(13,24,56,.06)}
-.app .mock{background:linear-gradient(160deg,var(--navy),var(--navy3));border-radius:20px;padding:22px;color:#fff;position:relative;overflow:hidden}
-.app .mock .bar{display:flex;gap:6px;margin-bottom:16px}.app .mock .bar i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.25)}
-.app .row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:12px 14px;margin-bottom:10px;font-size:14px}
-.app .row .d{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:rgba(255,200,61,.18);font-size:17px;flex:none}
-.app .row b{display:block;font-size:14px}.app .row small{color:#b9c5e8;font-size:12px}
-.app .row .st{margin-left:auto;font-size:12px;font-weight:700;color:#7ee2a3}
-/* STEPS */
-.st3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px;counter-reset:s}
-.st3 div{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 24px 26px}
-.st3 div:before{counter-increment:s;content:counter(s);position:absolute;top:-18px;left:24px;width:40px;height:40px;border-radius:12px;background:var(--gold);color:var(--navy);font-weight:900;display:grid;place-items:center;font-size:18px;box-shadow:0 8px 20px rgba(255,200,61,.4)}
-.st3 h3{font-size:19px;margin:8px 0 6px}
-.st3 p{color:var(--mut);font-size:15px}
-/* ABOUT */
-.ab{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
-.ab .pic{border-radius:24px;overflow:hidden;box-shadow:0 24px 60px rgba(13,24,56,.18);aspect-ratio:4/5}
-.ab .pic img{width:100%;height:100%;object-fit:cover}
-.ab p{color:#3b4566;font-size:17px;margin-top:14px}
-.ab blockquote{margin-top:22px;border-left:4px solid var(--gold);padding:6px 0 6px 18px;font-size:19px;font-weight:700;color:var(--ink)}
-/* CTA */
-.final{background:radial-gradient(800px 400px at 50% 0,rgba(255,200,61,.18),transparent 70%),linear-gradient(160deg,var(--navy),var(--navy3));color:#fff;border-radius:28px;padding:64px 30px;text-align:center}
-.final .sub{color:#c9d4f2}
-.final .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
-footer{padding:40px 0 50px;color:var(--mut);font-size:14px}
-footer .c{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-footer img{height:26px;filter:brightness(0) saturate(100%) invert(9%) sepia(32%) saturate(3200%) hue-rotate(214deg)}
-footer .fl{display:flex;gap:20px;flex-wrap:wrap}
-footer a:hover{color:var(--ink)}
-.rv{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}
-@media(max-width:960px){
- nav .lk{display:none}nav .c{justify-content:space-between}
- .hero .c{grid-template-columns:1fr;padding-top:104px;padding-bottom:70px;gap:40px}
- .ph{max-width:420px;margin:auto;width:100%}.ph .f1{left:-6px;top:auto;bottom:17%}.ph .f2{right:-6px;bottom:3%}.ph .fl{font-size:13px;padding:9px 12px}
- .pl{grid-template-columns:1fr 1fr}.cs,.app,.ab,.st3{grid-template-columns:1fr}
- .st3{gap:34px}.app{padding:26px}.ab .pic{max-width:420px}
- section{padding:72px 0}
-}
-@media(max-width:560px){.pl{grid-template-columns:1fr}.hero .cta .btn{width:100%;justify-content:center}}
-.hc{display:grid;gap:14px;margin-top:28px;max-width:560px}
-.hc a{display:flex;gap:16px;align-items:center;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,200,61,.45);border-radius:18px;padding:16px 18px;color:#fff;text-decoration:none;transition:transform .2s,background .2s}
-.hc a:hover{transform:translateY(-2px);background:rgba(255,200,61,.12)}
-.hc .ic{flex:none;width:54px;height:54px;border-radius:14px;display:grid;place-items:center;font-size:28px;background:rgba(255,200,61,.18)}
-.hc b{display:block;font-size:19px;letter-spacing:.3px}.hc small{display:block;opacity:.8;font-size:14.5px;margin-top:3px}.hc em{display:block;font-style:normal;color:#FFC83D;font-weight:800;font-size:15px;margin-top:6px}
-.ss{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
-.so{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,200,61,.35);border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;color:#fff;text-decoration:none;transition:.2s}
-.so:hover{transform:translateY(-3px);background:rgba(255,200,61,.1)}
-.so .e{font-size:40px}.so .tg{display:inline-block;background:#FD7800;color:#fff;font-size:12px;font-weight:800;padding:4px 10px;border-radius:20px;margin:12px 0 10px;align-self:flex-start}
-.so h4{font-size:17px;line-height:1.3;margin:0 0 6px}.so small{color:#FFC83D;font-weight:700;font-size:13px}.so p{color:#c9d4f2;font-size:14.5px;margin:10px 0 14px;flex:1}.so b{color:#FFC83D;font-size:14px}
-@media(max-width:980px){.ss{grid-template-columns:1fr 1fr}}@media(max-width:560px){.ss{grid-template-columns:1fr}}
-</style></head>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://lequydai.com/css/moi.css?v=2">
+</head>
 <body>
-<nav id="nav"><div class="c">
- <a class="logo" href="https://lequydai.com"><img src="https://lequydai.com/img/logo-am.png?v=20261105b" alt="ĐẠI LÊ AI"></a>
- <div class="lk"><a href="https://lequydai.com">Trang chủ</a><a href="https://hoc.lequydai.com">Khoá học</a><a href="#naoso">NAOSO</a><a href="#zalo-ai">Zalo AI</a><a href="#giong">App GIỌNG</a><a href="#mien-phi">Công cụ miễn phí</a></div>
- <a class="btn g sm" href="https://zalo.me/0972782782" target="_blank" rel="noopener">Nhắn Zalo cho Đại</a>
-</div></nav>
 
-<header class="hero"><div class="c">
- <div>
-  <span class="tag"><i></i>CÔNG CỤ AI</span>
-  <h1>Công cụ <em>AI</em> chạy sẵn, việc lặp lại để máy làm thay bạn</h1>
-  <p class="lead">Không muốn tự dựng? Dùng ngay công cụ Đại đã làm sẵn cho người kinh doanh một mình: trả lời khách, ghi nhớ khách, giao việc cho cộng sự AI. Dễ dùng, chạy tự động, tiết kiệm thời gian.</p>
-  <div class="hc">
-   <a href="#naoso"><span class="ic">🧠</span><div><b>NAOSO</b><small>Trợ lý AI làm việc theo não của bạn</small><em>Cài đặt trọn gói 4.868.000đ · Xem chi tiết →</em></div></a>
-   <a href="#zalo-ai"><span class="ic">💬</span><div><b>ZALO AI</b><small>Bot soạn tin trả lời khách trên Zalo</small><em>Từ 990.000đ · Xem chi tiết →</em></div></a>
-   <a href="#giong"><span class="ic">🎙️</span><div><b>APP GIỌNG</b><small>Dán chữ là có giọng đọc AI tự nhiên</small><em>686.000đ · Xem chi tiết →</em></div></a>
+<header class="dau">
+  <div class="khung">
+    <a href="https://lequydai.com"><img src="https://lequydai.com/img/logo-duong.png" alt="ĐẠI LÊ AI"></a>
+    <button class="mo-menu" aria-label="Mở menu" onclick="document.querySelector('.menu').classList.toggle('mo')">☰</button>
+    <nav class="menu">
+      <a href="#naoso">NAOSO</a>
+      <a href="#zalo-ai">Zalo AI</a>
+      <a href="#giong">App GIỌNG</a>
+      <a href="#mien-phi">Miễn phí</a>
+      <a href="https://lequydai.com/bai-viet/">Blog</a>
+      <a href="https://lequydai.com">Trang chủ</a>
+      <a class="nut nut-nho" href="https://zalo.me/0972782782">Nhắn Zalo cho Đại</a>
+    </nav>
   </div>
-  <div class="cta" style="margin-top:18px"><a class="btn o" href="https://zalo.me/0972782782" target="_blank" rel="noopener">Nhắn Zalo để được tư vấn</a></div>
- </div>
- <div class="ph">
-  <div class="frame"><img src="https://lequydai.com/img/dai-hero.jpg" alt="Đại Lê đang làm việc với AI"></div>
-  <div class="fl f1"><span class="ic">💬</span><div>Bot đã trả lời khách<b>Tự động · 24/7</b></div></div>
-  <div class="fl f2"><span class="ic">⏱️</span><div>Tiết kiệm hàng giờ mỗi ngày<b>Việc lặp lại giao cho AI</b></div></div>
- </div>
-</div></header>
+</header>
 
-<section id="cong-cu" style="padding-top:20px"><div class="c">
- <div class="app rv" id="naoso" style="scroll-margin-top:90px">
-  <div><div class="eyebrow">Công cụ</div><h2 class="h2">App NAOSO: trợ lý AI làm việc theo não của bạn</h2>
-   <p class="sub">Một nơi để giao việc cho AI, lưu tài liệu, ghi nhớ và để các "cộng sự AI" tự chạy theo lịch. Muốn tự làm thì học trong khoá VẬN HÀNH AGENT. Muốn có sẵn để dùng ngay thì để Đại Lê làm giúp.</p>
-   <p class="sub" style="margin-top:14px"><b>Dịch vụ cài đặt và kết nối trọn gói: 4.868.000đ</b></p>
-   <ul class="sub" style="margin:8px 0 0 18px;padding:0;line-height:1.7"><li>Cài NAOSO lên máy hoặc máy chủ của bạn, có địa chỉ riêng và mật khẩu bảo vệ</li><li>Kết nối Zalo, Facebook Fanpage, Google Drive, Docs, Sheets</li><li>Dựng sẵn 3 cộng sự AI theo công việc của bạn và 1 quy trình chạy hằng ngày</li><li>Nạp bảng giá, chính sách, câu trả lời mẫu để trợ lý nói đúng giọng của bạn</li><li>1 buổi hướng dẫn qua Zalo hoặc video call, hỗ trợ 30 ngày sau khi cài</li></ul>
-   <p class="sub" style="margin-top:10px;font-size:.85em">Chưa gồm phí model AI và phí máy chủ (nếu chạy trên VPS). Việc ngoài gói tính riêng.</p>
-   <video controls preload="metadata" playsinline style="width:100%;border-radius:12px;margin-top:18px;background:#000" src="https://lequydai.com/video/naoso-gioi-thieu.mp4"></video>
-   <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn g" href="https://naoso.lequydai.com" target="_blank" rel="noopener">Mở app NAOSO</a><a class="btn" style="border:1.5px solid var(--line)" href="https://zalo.me/0972782782" target="_blank" rel="noopener">Nhắn Zalo để được cài</a><a class="btn" style="border:1.5px solid var(--line)" href="https://hoc.lequydai.com/dang-ky/">Tự học cách dựng</a></div></div>
-  <div class="mock"><div class="bar"><i></i><i></i><i></i></div>
-   <div class="row"><span class="d">🗂️</span><div><b>Bảng việc</b><small>Tổng hợp tin nhắn khách sáng nay</small></div><span class="st">✓ Xong</span></div>
-   <div class="row"><span class="d">⏰</span><div><b>Hẹn giờ</b><small>8:00 mỗi ngày · Gửi báo cáo doanh thu</small></div><span class="st">Đang chạy</span></div>
-   <div class="row"><span class="d">🧠</span><div><b>Ghi nhớ</b><small>Bảng giá, chính sách, câu trả lời mẫu</small></div><span class="st">Đã nạp</span></div>
-   <div class="row" style="margin-bottom:0"><span class="d">🤝</span><div><b>Cộng sự AI</b><small>Trợ lý CSKH · Trợ lý nội dung</small></div><span class="st">Online</span></div>
+<main>
+  <section class="mo-dau trai">
+    <div class="khung hai-cot">
+      <div>
+        <span class="nhan">Công cụ AI chạy sẵn</span>
+        <h1>Việc lặp lại, <span class="vet">để máy làm thay</span> bạn.</h1>
+        <p class="phu">Không muốn tự dựng? Dùng ngay công cụ Đại đã làm sẵn cho người kinh doanh một mình: trả lời khách, ghi nhớ khách, giao việc cho cộng sự AI.</p>
+        <div class="nhanh">
+          <a href="#naoso"><span class="i">🧠</span><span><b>NAOSO</b><small>Trợ lý AI làm việc theo não của bạn</small></span><span class="g">4.868.000đ →</span></a>
+          <a href="#zalo-ai"><span class="i">💬</span><span><b>ZALO AI</b><small>Bot soạn tin trả lời khách trên Zalo</small></span><span class="g">Từ 990.000đ →</span></a>
+          <a href="#giong"><span class="i">🎙️</span><span><b>APP GIỌNG</b><small>Dán chữ là có giọng đọc AI tự nhiên</small></span><span class="g">686.000đ →</span></a>
+          <a href="#mien-phi"><span class="i">🎁</span><span><b>4 CÔNG CỤ MIỄN PHÍ</b><small>Bấm là có kết quả, không cần mua</small></span><span class="g">Dùng thử →</span></a>
+        </div>
+      </div>
+      <div class="anh-khung"><img src="https://lequydai.com/img/dai-cuoi-3.jpg" alt="Đại đang làm việc với AI"></div>
+    </div>
+  </section>
+
+  <section class="khoi nen-trang" id="naoso">
+    <div class="khung sp">
+      <div>
+        <span class="nhan">Sản phẩm chính</span>
+        <h2>NAOSO: trợ lý AI làm việc <span class="vet">theo não của bạn</span></h2>
+        <p class="phu" style="margin-top:16px">Một nơi để giao việc cho AI, lưu tài liệu, ghi nhớ và để các cộng sự AI tự chạy theo lịch. Muốn tự làm thì học khoá VẬN HÀNH AGENT. Muốn có sẵn để dùng ngay thì để Đại làm giúp.</p>
+        <p class="gia-to">Cài đặt và kết nối trọn gói: 4.868.000đ</p>
+        <ul class="ds-tick">
+          <li>Cài NAOSO lên máy hoặc máy chủ của bạn, có địa chỉ riêng và mật khẩu bảo vệ</li>
+          <li>Kết nối Zalo, Facebook Fanpage, Google Drive, Docs, Sheets</li>
+          <li>Dựng sẵn 3 cộng sự AI theo công việc của bạn và 1 quy trình chạy hằng ngày</li>
+          <li>Nạp bảng giá, chính sách, câu trả lời mẫu để trợ lý nói đúng giọng của bạn</li>
+          <li>1 buổi hướng dẫn qua Zalo hoặc video call, hỗ trợ 30 ngày sau khi cài</li>
+        </ul>
+        <p class="nho">Chưa gồm phí model AI và phí máy chủ (nếu chạy trên VPS). Việc ngoài gói tính riêng.</p>
+        <div class="hang-nut" style="justify-content:flex-start;margin-top:20px">
+          <a class="nut" href="https://zalo.me/0972782782">Nhắn Zalo để được cài →</a>
+          <a class="nut nut-vien" href="https://naoso.lequydai.com">Mở app NAOSO</a>
+        </div>
+        <p class="nho" style="margin-top:12px">Muốn tự dựng? <a href="https://lequydai.com/van-hanh/">Học khoá VẬN HÀNH AGENT</a></p>
+      </div>
+      <div>
+        <div class="vid"><video src="https://lequydai.com/video/naoso-gioi-thieu.mp4" controls playsinline preload="metadata"></video></div>
+        <div class="bang">
+          <div class="dong"><span class="i">🗂️</span><span><b>Bảng việc</b><small>Tổng hợp tin nhắn khách sáng nay</small></span><em>✓ Xong</em></div>
+          <div class="dong"><span class="i">⏰</span><span><b>Hẹn giờ</b><small>8:00 mỗi ngày · Gửi báo cáo doanh thu</small></span><em>Đang chạy</em></div>
+          <div class="dong"><span class="i">🧠</span><span><b>Ghi nhớ</b><small>Bảng giá, chính sách, câu trả lời mẫu</small></span><em>Đã nạp</em></div>
+          <div class="dong"><span class="i">🤝</span><span><b>Cộng sự AI</b><small>Trợ lý CSKH · Trợ lý nội dung</small></span><em>Online</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="khoi" id="zalo-ai">
+    <div class="khung sp">
+      <div>
+        <span class="nhan">Sản phẩm chính</span>
+        <h2>Zalo AI: bot soạn tin <span class="vet">trả lời khách</span> trên Zalo</h2>
+        <p class="phu" style="margin-top:16px">Bot đọc tin khách, nhớ từng khách và soạn câu trả lời đúng giọng của bạn. Chạy trên Zalo cá nhân, cài trên máy Windows. Bắt đầu bằng chế độ Nháp: bạn duyệt rồi bot mới gửi.</p>
+        <p class="gia-to">Gói 1 năm 990.000đ · Trọn đời 1.990.000đ</p>
+        <p class="nho">Gói trọn đời dùng cho 1 máy.</p>
+        <div class="hang-nut" style="justify-content:flex-start;margin-top:20px">
+          <a class="nut" href="https://congcu.lequydai.com/zalo-ai/">Xem chi tiết Zalo AI →</a>
+          <a class="nut nut-vien" href="https://zalo.me/0972782782">Nhắn Zalo hỏi mua</a>
+        </div>
+        <p class="nho" style="margin-top:12px">Đọc thêm: <a href="https://lequydai.com/bai-viet/chatbot-zalo-can-gi/">Chatbot Zalo cần chuẩn bị gì trước khi bật</a></p>
+      </div>
+      <div class="bang">
+        <div class="dong"><span class="i">📝</span><span><b>Nháp chờ duyệt</b><small>Câu bot soạn sẵn, bạn duyệt rồi mới gửi</small></span><em>Chờ duyệt</em></div>
+        <div class="dong"><span class="i">🧠</span><span><b>Nhớ khách</b><small>40 lượt chat gần nhất của từng khách</small></span><em>Đã lưu</em></div>
+        <div class="dong"><span class="i">🧪</span><span><b>Thử bot</b><small>Gõ thử như khách, không gửi lên Zalo</small></span><em>Sẵn sàng</em></div>
+        <div class="dong"><span class="i">⚡</span><span><b>Chế độ Tự động</b><small>Bật khi bạn đã tin tưởng bot</small></span><em>Khi sẵn sàng</em></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="khoi nen-trang" id="giong">
+    <div class="khung sp">
+      <div>
+        <span class="nhan">Công cụ thêm</span>
+        <h2>App GIỌNG: dán chữ là <span class="vet">có giọng đọc</span></h2>
+        <p class="phu" style="margin-top:16px">Làm video bán hàng không cần thu âm, không cần lên hình. Dán kịch bản, AI sửa cho trôi chảy, chọn giọng rồi bấm tạo là có file giọng đọc tự nhiên như người thật.</p>
+        <ul class="ds-tick">
+          <li>10 phong cách đọc: bán hàng, kể chuyện, truyền động lực, chữa lành…</li>
+          <li>5 giọng nam và nữ, chỉnh tốc độ, độ trầm, cảm xúc</li>
+          <li>AI tự chỉnh kịch bản vừa video 15 giây, 30 giây, 1 phút</li>
+          <li>Tải file WAV về máy, ghép vào video là xong</li>
+          <li>Dùng trên điện thoại và máy tính, dùng key Gemini của bạn (có hướng dẫn lấy key)</li>
+        </ul>
+        <p class="gia-to">Giá: 686.000đ</p>
+        <p class="nho">Hoặc nhận app GIỌNG tặng kèm khi học khoá <a href="https://hoc.lequydai.com/khong-len-hinh/dang-ky/">LÀM VIDEO KHÔNG CẦN LÊN HÌNH</a>.</p>
+        <div class="hang-nut" style="justify-content:flex-start;margin-top:20px">
+          <a class="nut" href="https://zalo.me/0972782782">Nhắn Zalo mua app GIỌNG →</a>
+          <a class="nut nut-vien" href="https://giong.lequydai.com">Xem app</a>
+        </div>
+      </div>
+      <div>
+        <div class="vid"><video src="https://lequydai.com/video/giong-gioi-thieu.mp4" controls playsinline preload="metadata"></video></div>
+        <div class="bang">
+          <div class="dong"><span class="i">✍️</span><span><b>Dán kịch bản</b><small>Hoặc chỉ một ý tưởng</small></span><em>✓ Xong</em></div>
+          <div class="dong"><span class="i">✨</span><span><b>Tối ưu voiceover</b><small>AI sửa cho trôi, đúng độ dài</small></span><em>✓ Xong</em></div>
+          <div class="dong"><span class="i">🎙️</span><span><b>Giọng Fenrir</b><small>Nam mạnh mẽ, dứt khoát</small></span><em>Đã chọn</em></div>
+          <div class="dong"><span class="i">⬇️</span><span><b>Tải file WAV</b><small>Ghép vào video là xong</small></span><em>Sẵn sàng</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="khoi nen-dam" id="mien-phi">
+    <div class="khung">
+      <div class="dau-khoi">
+        <span class="nhan">Dùng thử miễn phí</span>
+        <h2>4 công cụ nhỏ, <span class="vet">bấm là có kết quả</span></h2>
+        <p class="phu">Hai công cụ chạy ngay trên trình duyệt. Hai công cụ cài trên máy Windows, nhận file trong nhóm Zalo.</p>
+      </div>
+      <div class="luoi luoi-4" id="cong-cu">
+        <a class="the the-cc" href="https://chu.lequydai.com"><span class="bt">🎧</span><span class="nhan" style="margin-top:12px">Miễn phí · Chạy trên web</span><h3>NÓI RA CHỮ</h3><p class="y">Ghi âm, file Zoom thành chữ</p><p class="nho">Tải file ghi âm hoặc video lên, nhận lại chữ, kịch bản, bài Facebook và biên bản họp.</p><span class="xem">Mở công cụ →</span></a>
+        <a class="the the-cc" href="https://anh.lequydai.com"><span class="bt">🖼️</span><span class="nhan" style="margin-top:12px">Miễn phí · Chạy trên web</span><h3>TÓM ẢNH</h3><p class="y">Dán đoạn văn, nhận ảnh tóm ý</p><p class="nho">Dán một đoạn văn, nhận ngay ảnh infographic rõ nét để đăng Facebook, Zalo.</p><span class="xem">Mở công cụ →</span></a>
+        <a class="the the-cc" href="https://congcu.lequydai.com/don-may/"><span class="bt">🧹</span><span class="nhan" style="margin-top:12px">Miễn phí · Máy Windows</span><h3>DỌN MÁY</h3><p class="y">Dọn rác máy tính trong 2 nút bấm</p><p class="nho">Quét rồi dọn các thư mục rác an toàn. Không đụng tới tài liệu và dự án của bạn.</p><span class="xem">Xem cách nhận và dùng →</span></a>
+        <a class="the the-cc" href="https://congcu.lequydai.com/cat-nhanh/"><span class="bt">✂️</span><span class="nhan" style="margin-top:12px">Miễn phí · Máy Windows</span><h3>CẮT NHANH</h3><p class="y">Kéo thả video, cắt khoảng lặng</p><p class="nho">Kéo video vào là tự bỏ các đoạn im lặng. File gốc giữ nguyên.</p><span class="xem">Xem cách nhận và dùng →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="khoi nen-trang moi-cuoi">
+    <div class="khung">
+      <span class="nhan">Bắt đầu hôm nay</span>
+      <h2>Bạn muốn AI làm <span class="vet">việc gì thay bạn</span>?</h2>
+      <p class="phu">Vào nhóm Zalo để nhận công cụ miễn phí và hỏi Đại trực tiếp. Cần tư vấn riêng, nhắn Zalo 0972 782 782.</p>
+      <div class="hang-nut">
+        <a class="nut" href="https://zalo.me/g/a9my3sx1ov0fsihenx6e">Vào nhóm Zalo miễn phí →</a>
+        <a class="nut nut-vien" href="https://zalo.me/0972782782">Nhắn Zalo cho Đại</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="chan">
+  <div class="khung">
+    <img src="https://lequydai.com/img/logo-duong.png" alt="ĐẠI LÊ AI">
+    <a href="https://lequydai.com">Trang chủ</a><a href="https://lequydai.com/#khoa-hoc">Khoá học</a><a href="https://lequydai.com/bai-viet/">Blog</a><a href="https://naoso.lequydai.com">App NAOSO</a><a href="https://zalo.me/0972782782">Zalo 0972 782 782</a><a href="https://lequydai.com/dieu-khoan/">Điều khoản</a><a href="https://lequydai.com/chinh-sach-bao-mat/">Chính sách bảo mật</a>
+    <span style="width:100%">© 2026 congcu.lequydai.com</span>
   </div>
- </div>
- <div class="app rv" id="zalo-ai" style="margin-top:28px;scroll-margin-top:90px">
-  <div><div class="eyebrow">Công cụ mới</div><h2 class="h2">Zalo AI: bot soạn tin trả lời khách trên Zalo</h2>
-   <p class="sub">Bot đọc tin khách, nhớ từng khách và soạn câu trả lời đúng giọng của bạn. Chạy trên Zalo cá nhân, cài trên máy Windows. Bắt đầu bằng chế độ Nháp: bạn duyệt rồi bot mới gửi.</p>
-   <p style="margin-top:14px;font-weight:700;color:var(--ink)">Gói 1 năm: 990.000đ · Gói trọn đời: 1.990.000đ (1 máy)</p>
-   <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn g" href="/zalo-ai/">Xem chi tiết Zalo AI</a><a class="btn" style="border:1.5px solid var(--line)" href="https://zalo.me/0972782782" target="_blank" rel="noopener">Nhắn Zalo hỏi mua</a></div></div>
-  <div class="mock"><div class="bar"><i></i><i></i><i></i></div>
-   <div class="row"><span class="d">📝</span><div><b>Nháp chờ duyệt</b><small>Câu bot soạn sẵn, bạn duyệt rồi mới gửi</small></div><span class="st">Chờ duyệt</span></div>
-   <div class="row"><span class="d">🧠</span><div><b>Nhớ khách</b><small>40 lượt chat gần nhất của từng khách</small></div><span class="st">Đã lưu</span></div>
-   <div class="row"><span class="d">🧪</span><div><b>Thử bot</b><small>Gõ thử như khách, không gửi lên Zalo</small></div><span class="st">Sẵn sàng</span></div>
-   <div class="row" style="margin-bottom:0"><span class="d">⚡</span><div><b>Chế độ Tự động</b><small>Bật khi bạn đã tin tưởng bot</small></div><span class="st">Khi sẵn sàng</span></div>
-  </div>
- </div>
-<div class="app rv" id="giong" style="margin-top:28px;scroll-margin-top:90px">
-<div><div class="eyebrow">Công cụ mới</div><h2 class="h2">App GIỌNG: dán chữ là có giọng đọc</h2>
-<p class="sub">Làm video bán hàng không cần thu âm, không cần lên hình. Dán kịch bản, AI sửa cho trôi chảy, chọn giọng rồi bấm tạo là có file giọng đọc tự nhiên như người thật.</p>
-<ul class="sub" style="margin:12px 0 0 18px;padding:0;line-height:1.7"><li>10 phong cách đọc: bán hàng, kể chuyện, truyền động lực, chữa lành…</li><li>5 giọng nam và nữ, chỉnh tốc độ, độ trầm, cảm xúc</li><li>AI tự chỉnh kịch bản vừa video 15 giây, 30 giây, 1 phút</li><li>Tải file WAV về máy, ghép vào video là xong</li><li>Dùng trên điện thoại và máy tính, dùng key Gemini của bạn (có hướng dẫn lấy key)</li></ul>
-<p style="margin-top:14px;font-weight:800;color:var(--ink);font-size:20px">Giá: 686.000đ</p>
-<p class="sub" style="margin-top:6px;font-size:.92em">Hoặc nhận app GIỌNG tặng kèm khi học khoá <a href="https://hoc.lequydai.com/khong-len-hinh/dang-ky/" style="color:var(--navy3);font-weight:800;text-decoration:underline">LÀM VIDEO KHÔNG CẦN LÊN HÌNH</a>.</p>
-<video controls preload="metadata" playsinline style="width:100%;border-radius:12px;margin-top:18px;background:#000" src="https://lequydai.com/video/giong-gioi-thieu.mp4"></video>
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn g" href="https://zalo.me/0972782782" target="_blank" rel="noopener">Nhắn Zalo mua app GIỌNG</a><a class="btn" style="border:1.5px solid var(--line)" href="https://giong.lequydai.com" target="_blank" rel="noopener">Xem app</a></div></div>
-<div class="mock"><div class="bar"><i></i><i></i><i></i></div>
-<div class="row"><span class="d">✍️</span><div><b>Dán kịch bản</b><small>Hoặc chỉ một ý tưởng</small></div><span class="st">✓ Xong</span></div>
-<div class="row"><span class="d">✨</span><div><b>Tối ưu voiceover</b><small>AI sửa cho trôi, đúng độ dài</small></div><span class="st">✓ Xong</span></div>
-<div class="row"><span class="d">🎙️</span><div><b>Giọng Fenrir</b><small>Nam mạnh mẽ, dứt khoát</small></div><span class="st">Đã chọn</span></div>
-<div class="row" style="margin-bottom:0"><span class="d">⬇️</span><div><b>Tải file WAV</b><small>Ghép vào video là xong</small></div><span class="st">Sẵn sàng</span></div>
-</div>
-</div>
-</div></section>
+</footer>
 
-<section id="mien-phi" style="padding-top:0;scroll-margin-top:90px"><div class="c">
- <div class="dark rv" style="border-radius:28px;padding:46px 30px">
-  <div class="eyebrow">Dùng thử miễn phí</div><h2 class="h2">4 công cụ nhỏ, bấm là có kết quả</h2>
-  <p class="sub">Việc nào lặp lại thì để máy làm. Hai công cụ chạy ngay trên trình duyệt. Hai công cụ cài trên máy Windows, nhận file trong nhóm Zalo.</p>
-  <div class="ss">
-   <a class="so" href="https://chu.lequydai.com" target="_blank" rel="noopener"><span class="e">🎧</span><span class="tg">MIỄN PHÍ · CHẠY TRÊN WEB</span><h4>NÓI RA CHỮ</h4><small>Ghi âm, file Zoom thành chữ</small><p>Tải file ghi âm hoặc video lên, nhận lại chữ, kịch bản, bài Facebook và biên bản họp.</p><b>Mở công cụ →</b></a>
-   <a class="so" href="https://anh.lequydai.com" target="_blank" rel="noopener"><span class="e">🖼️</span><span class="tg">MIỄN PHÍ · CHẠY TRÊN WEB</span><h4>TÓM ẢNH</h4><small>Dán đoạn văn, nhận ảnh tóm ý</small><p>Dán một đoạn văn, nhận ngay ảnh infographic rõ nét để đăng Facebook, Zalo.</p><b>Mở công cụ →</b></a>
-   <a class="so" href="https://congcu.lequydai.com/don-may/"><span class="e">🧹</span><span class="tg">MIỄN PHÍ · MÁY WINDOWS</span><h4>DỌN MÁY</h4><small>Dọn rác máy tính trong một lần bấm</small><p>Quét rồi dọn các thư mục rác an toàn. Không đụng tới tài liệu và dự án của bạn.</p><b>Xem cách nhận và dùng →</b></a>
-   <a class="so" href="https://congcu.lequydai.com/cat-nhanh/"><span class="e">✂️</span><span class="tg">MIỄN PHÍ · MÁY WINDOWS</span><h4>CẮT NHANH</h4><small>Kéo thả video, cắt khoảng lặng</small><p>Kéo video vào là tự bỏ các đoạn im lặng. File gốc giữ nguyên.</p><b>Xem cách nhận và dùng →</b></a>
-  </div>
- </div>
-</div></section>
-
-<section style="padding-top:0"><div class="c"><div class="final rv">
- <div class="eyebrow">Bắt đầu hôm nay</div><h2 class="h2">Bạn muốn AI làm việc gì thay bạn?</h2>
- <p class="sub" style="margin:auto">Vào nhóm Zalo để nhận tài liệu miễn phí và hỏi Đại trực tiếp. Cần tư vấn riêng, nhắn Zalo 0972 782 782.</p>
- <div class="cta"><a class="btn g" href="https://zalo.me/g/a9my3sx1ov0fsihenx6e" target="_blank" rel="noopener">Vào nhóm Zalo miễn phí</a><a class="btn o" href="https://zalo.me/0972782782" target="_blank" rel="noopener">Nhắn Zalo cho Đại</a></div>
-</div></div></section>
-
-<footer><div class="c">
- <img src="https://lequydai.com/img/logo-am.png?v=20261105b" alt="ĐẠI LÊ AI">
- <div class="fl"><a href="https://lequydai.com">Trang chủ</a><a href="https://hoc.lequydai.com">Khoá học</a><a href="https://naoso.lequydai.com" target="_blank" rel="noopener">App NAOSO</a><a href="https://zalo.me/0972782782" target="_blank" rel="noopener">Zalo 0972 782 782</a><a href="https://lequydai.com/dieu-khoan/">Điều khoản</a><a href="https://lequydai.com/chinh-sach-bao-mat/">Chính sách bảo mật</a></div>
- <div>© 2026 ĐẠI LÊ AI · congcu.lequydai.com</div>
-</div></footer>
-<script>
-const n=document.getElementById('nav');const f=()=>n.classList.toggle('s',scrollY>20);addEventListener('scroll',f,{passive:true});f();
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
-</script>
-</body></html>
+<div class="thanh"><span>4 công cụ miễn phí, nhận trong nhóm Zalo</span><a class="nut nut-nho" href="https://zalo.me/g/a9my3sx1ov0fsihenx6e">Nhóm Zalo</a></div>
+</body>
+</html>
