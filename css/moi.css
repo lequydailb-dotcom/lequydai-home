@@ -176,3 +176,4 @@ p{margin:0 0 14px}
 .ba-buoc strong{display:block;color:var(--navy);font-size:15px}
 .ba-buoc span{font-size:14px;color:var(--mo);line-height:1.45}
 @media(max-width:760px){.ba-buoc{grid-template-columns:1fr}}
+.the .xem{margin-top:auto;padding-top:12px;font-weight:700;color:var(--gach);text-decoration:none}

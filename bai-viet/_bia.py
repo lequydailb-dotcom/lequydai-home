@@ -5,6 +5,21 @@ D = os.path.dirname(os.path.abspath(__file__)); R = os.path.dirname(D)
 data = json.load(open(f'{D}/bai.json', encoding='utf-8'))
 ds = data['bai'] + data['khoa_hoc']
 chon = sys.argv[1:]
+
+# Tự chọn ảnh cho bài chưa có "anh": lấy ảnh trong img/blog dùng ít nhất, tránh ảnh vừa dùng gần đây
+import glob
+POOL = sorted(os.path.relpath(f, f'{R}/img') for f in glob.glob(f'{R}/img/blog/*.jpg'))
+def _chon_anh():
+    gan = [b.get('anh') for b in sorted(data['bai'], key=lambda b: b['iso'], reverse=True) if b.get('anh')]
+    dem = {a: gan.count(a) for a in POOL}
+    vitri = {a: (gan.index(a) if a in gan else 10**6) for a in POOL}
+    return sorted(POOL, key=lambda a: (dem[a], -vitri[a]))[0]
+_doi = False
+for b in data['bai'] + data['khoa_hoc']:
+    if not b.get('anh') and POOL:
+        b['anh'] = _chon_anh(); _doi = True
+if _doi:
+    json.dump(data, open(f'{D}/bai.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 ds = [b for b in ds if b['slug'] in chon] if chon else [b for b in ds if not os.path.exists(f"{D}/anh/{b['slug']}.jpg")]
 T = '''<html><head><style>
 @font-face{font-family:L;src:url(file://%(D)s/_font/Lora-Variable.ttf)}

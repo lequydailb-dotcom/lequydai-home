@@ -8,7 +8,7 @@
    "iso": "2026-11-13",
    "tieu_de": "Máy chậm, ổ C đầy: dọn rác an toàn trong 2 nút bấm",
    "bia": "Máy chậm, ổ C đầy?|Dọn an toàn|trong 2 nút bấm",
-   "anh": "dai-cuoi.jpg",
+   "anh": "blog/anh-01.jpg",
    "mo_ta": "Không biết xoá gì cho an toàn nên cứ để ổ C đỏ mãi. Cách dọn đúng chỗ rác, không đụng tới ảnh, video, tài liệu của bạn.",
    "tra_loi": "Rác làm đầy ổ C chủ yếu nằm ở 4 chỗ: tệp tạm của Windows, bộ nhớ đệm trình duyệt, bộ nhớ đệm phần mềm dựng video và thùng rác. Dọn đúng 4 chỗ này là an toàn. Công cụ DỌN MÁY miễn phí làm việc đó bằng 2 nút: QUÉT rồi DỌN NGAY.",
    "than": "<p>Nhiều người thấy ổ C báo đỏ là hoảng, rồi xoá bừa vài thư mục lạ. Có người xoá nhầm cả dự án video đang làm dở. Thật ra rác nằm ở vài chỗ cố định, biết đúng chỗ thì dọn rất nhẹ nhàng.</p>\n<h2>Rác nằm ở đâu</h2>\n<ul><li><b>Tệp tạm (Temp)</b>: Windows và phần mềm tạo ra khi chạy, dùng xong là bỏ.</li>\n<li><b>Bộ nhớ đệm trình duyệt</b>: Chrome, Edge, Cốc Cốc, Firefox lưu tạm hình ảnh trang web. Xoá đi, lần sau trang tự tải lại.</li>\n<li><b>Bộ nhớ đệm CapCut, Premiere</b>: file xem trước khi dựng video. Không phải dự án của bạn.</li>\n<li><b>Thùng rác</b>: file bạn đã xoá nhưng vẫn chiếm chỗ.</li></ul>\n<h2>Dọn bằng DỌN MÁY trong 2 nút</h2>\n<ol><li>Vào nhóm Zalo, mở tin nhắn đã ghim, tải file DonMay về.</li>\n<li>Chuột phải vào file, chọn Extract All để giải nén.</li>\n<li>Bấm đúp DonMay.bat, rồi bấm <b>1. QUÉT</b>. Máy hiện từng nhóm rác chiếm bao nhiêu chỗ.</li>\n<li>Bấm <b>2. DỌN NGAY</b> là xong.</li></ol>\n<p>Nếu Windows hiện \"Windows protected your PC\", bấm More info rồi Run anyway. Đây là cảnh báo bình thường với file tải về.</p>\n<h2>Những thứ công cụ không đụng tới</h2>\n<p>Ảnh, video, tài liệu, Desktop, Downloads, mật khẩu và tài khoản đăng nhập đều giữ nguyên. Riêng thùng rác sẽ được dọn sạch, nên cần lấy lại file nào thì lấy trước khi bấm DỌN.</p>\n<h2>Bao lâu dọn một lần</h2>\n<p>Mỗi tháng một lần là đủ. Nếu bạn dựng video nhiều, bộ nhớ đệm đầy nhanh hơn, có thể dọn mỗi tuần.</p>",
@@ -25,7 +25,7 @@
    "iso": "2026-11-13",
    "tieu_de": "Họp Zoom xong khỏi gõ lại: biến file ghi âm thành chữ, kịch bản, bài đăng",
    "bia": "Họp Zoom xong|khỏi gõ lại|biên bản",
-   "anh": "dai-cuoi-3.jpg",
+   "anh": "blog/anh-02.jpg",
    "mo_ta": "Một file ghi âm cho ra 4 thứ: văn bản chép lời, kịch bản thu âm, bài Facebook, biên bản họp. Làm trên trình duyệt, miễn phí.",
    "tra_loi": "Dùng công cụ NÓI RA CHỮ (chu.lequydai.com): dán khoá Gemini miễn phí, chọn file ghi âm hoặc video, tích kết quả muốn nhận rồi bấm Bắt đầu. Vài phút sau có đủ chữ để copy hoặc tải về.",
    "than": "<p>Họp một tiếng, gõ lại biên bản mất thêm hai tiếng. Quay video nói chuyện xong, lại ngồi chép lời để viết bài. Đây là việc AI làm rất tốt, và bạn không cần cài gì cả.</p>\n<h2>Bước 1: dán khoá Gemini</h2>\n<p>Vào chu.lequydai.com, dán khoá Gemini rồi bấm Lưu khoá. Khoá này lấy miễn phí trong Google AI Studio, dán một lần là xong. Nên chọn mô hình gemini-2.5-flash, vừa nhanh vừa đủ tốt.</p>\n<h2>Bước 2: đưa âm thanh vào</h2>\n<p>Bấm chọn file ghi âm hoặc video. Công cụ nhận mp3, m4a, wav, mp4, webm, mkv. Không có file sẵn thì bấm Ghi âm ngay, nói thẳng vào máy. Đã có văn bản thì dán vào ô chữ.</p>\n<h2>Bước 3: chọn thứ muốn nhận</h2>\n<ul><li><b>Kịch bản thu âm</b> cho video ngắn.</li>\n<li><b>Bài đăng Facebook</b> đăng được ngay.</li>\n<li><b>Biên bản họp</b> cho buổi Zoom.</li>\n<li><b>Tóm tắt ý chính</b> khi chỉ cần đọc nhanh.</li></ul>\n<p>Văn bản chép lời luôn có. Chọn càng nhiều thì chờ càng lâu một chút.</p>\n<h2>Mẹo để chữ ra chính xác hơn</h2>\n<p>Ghi âm ở chỗ yên tĩnh, nói rõ, để điện thoại gần người nói. Chưa có file để thử thì bấm Dùng thử dữ liệu mẫu rồi bấm Bắt đầu, xem kết quả trước khi dùng thật.</p>",
@@ -42,7 +42,7 @@
    "iso": "2026-11-13",
    "tieu_de": "Chatbot trả lời khách trên Zalo: cần chuẩn bị những gì trước khi bật",
    "bia": "Chatbot Zalo|trả lời khách|cần chuẩn bị gì?",
-   "anh": "dai-cuoi.jpg",
+   "anh": "blog/anh-03.jpg",
    "mo_ta": "Bot trả lời hay hay dở phụ thuộc vào thứ bạn nạp cho nó. 4 thứ cần chuẩn bị và cách bật bot mà không sợ trả lời sai.",
    "tra_loi": "Trước khi bật chatbot Zalo, chuẩn bị 4 thứ: bảng giá, chính sách (giao hàng, đổi trả), các câu khách hay hỏi kèm câu trả lời mẫu, và giọng nói chuyện của bạn. Rồi bắt đầu ở chế độ Nháp: bot soạn, bạn duyệt rồi mới gửi.",
    "than": "<p>Khách nhắn Zalo cả ngày, trả lời chậm là mất khách. Chatbot giúp được, nhưng bot chỉ trả lời đúng khi bạn cho nó biết bạn bán gì, giá bao nhiêu, và nói chuyện thế nào.</p>\n<h2>4 thứ cần chuẩn bị</h2>\n<ol><li><b>Bảng giá</b>: sản phẩm, giá, quà tặng đang chạy.</li>\n<li><b>Chính sách</b>: giao hàng, thanh toán, đổi trả, bảo hành.</li>\n<li><b>Câu hỏi hay gặp</b>: 10 đến 20 câu khách hỏi nhiều nhất, kèm câu bạn vẫn trả lời.</li>\n<li><b>Giọng của bạn</b>: xưng hô thế nào, gọi khách là gì, câu chào quen thuộc.</li></ol>\n<p>Viết ra giấy hay file Word đều được. Bot đọc những thứ này để trả lời đúng giọng bạn.</p>\n<h2>Bật bot thế nào cho yên tâm</h2>\n<p>Zalo AI bắt đầu ở <b>chế độ Nháp</b>: bot đọc tin khách và soạn sẵn câu trả lời, bạn xem rồi bấm gửi. Có ô Thử bot để bạn gõ như khách mà không gửi lên Zalo. Khi đã tin bot trả lời đúng, bạn mới bật chế độ Tự động.</p>\n<h2>Bot nhớ từng khách</h2>\n<p>Bot nhớ 40 lượt chat gần nhất của mỗi khách, nên khách quay lại hỏi tiếp vẫn hiểu đang nói chuyện gì, không phải hỏi lại từ đầu.</p>\n<h2>Cần gì để chạy</h2>\n<p>Zalo AI chạy trên Zalo cá nhân, cài trên máy Windows có Zalo PC, nên máy cần bật lúc bot làm việc. Chưa rõ việc của mình có hợp không, nhắn Zalo 0972 782 782 hỏi Đại trước.</p>",
@@ -59,7 +59,7 @@
    "iso": "2026-11-14",
    "tieu_de": "5 công cụ AI miễn phí giúp người bán hàng tiết kiệm thời gian mỗi ngày",
    "bia": "5 công cụ AI miễn phí|cho người bán hàng|đỡ việc mỗi ngày",
-   "anh": "dai-cuoi-3.jpg",
+   "anh": "blog/anh-04.jpg",
    "mo_ta": "Soạn tin trả lời khách, nghĩ caption, làm ảnh, cắt video: 5 công cụ AI miễn phí, mở lên là làm được ngay, và cách chọn đúng một công cụ để bắt đầu.",
    "tra_loi": "5 công cụ AI miễn phí dễ dùng nhất cho người bán hàng: ChatGPT hoặc Claude để soạn chữ, Canva để làm ảnh, CapCut để cắt video, NotebookLM để đọc tài liệu giúp bạn, Gemini để hỏi nhanh và lấy ý tưởng. Đừng cài hết cùng lúc, hãy chọn đúng một công cụ cho việc mất thời gian nhất của bạn.",
    "than": "<p>Bạn có đang ngồi soạn tin trả lời khách, nghĩ caption, làm ảnh, cắt video… hết cả buổi mà chưa kịp bán gì không? Việc không khó, chỉ là lặp đi lặp lại. Mà việc lặp lại thì giao cho AI là hợp nhất.</p>\n<p>Dưới đây là 5 công cụ AI miễn phí dễ dùng, mở lên là làm được ngay. Bản miễn phí thường có giới hạn lượt dùng, bạn xem thêm trên trang của từng công cụ nhé.</p>\n<h2>1. ChatGPT hoặc Claude: soạn chữ</h2>\n<p>Dùng để viết caption, soạn tin trả lời khách, nghĩ tiêu đề. Ví dụ bạn bán áo thun: dán mô tả sản phẩm vào, nhờ viết 5 caption ngắn cho Facebook, chọn câu ưng nhất rồi sửa vài chữ cho giống giọng của bạn.</p>\n<h2>2. Canva: làm ảnh bài đăng</h2>\n<p>Chọn mẫu có sẵn, thay ảnh và chữ của bạn. Không cần biết thiết kế vẫn ra ảnh gọn gàng.</p>\n<h2>3. CapCut: cắt video ngắn</h2>\n<p>Video quay bằng điện thoại, đưa vào là có thể tự thêm phụ đề, cắt khúc thừa.</p>\n<h2>4. NotebookLM: đọc tài liệu giúp bạn</h2>\n<p>Tải bảng giá, chính sách đổi trả lên, rồi hỏi thẳng. Khách hỏi gì, bạn đỡ phải lục file.</p>\n<h2>5. Gemini: hỏi nhanh, lấy ý tưởng</h2>\n<p>Cần ý tưởng khuyến mãi hay muốn hiểu một khái niệm lạ, cứ hỏi.</p>\n<h2>Bắt đầu từ đâu</h2>\n<p>Đừng cài hết cùng lúc. Lấy giấy ra, ghi việc nào bạn làm mất thời gian nhất mỗi ngày. Chọn đúng một công cụ cho việc đó và dùng thử ba ngày.</p>\n<p>Muốn biết mình tiết kiệm được bao nhiêu, bạn tự đo: cộng thời gian soạn tin, làm ảnh, viết bài, cắt video mỗi ngày, rồi xem công cụ nào gánh được phần nào. Con số thật của bạn mới là con số đáng tin.</p>\n<p>Ngoài 5 công cụ trên, ĐẠI LÊ AI còn có 4 công cụ miễn phí làm sẵn cho người Việt: biến file ghi âm thành chữ, biến đoạn văn thành ảnh tóm ý, dọn rác máy tính và tự cắt khoảng lặng trong video.</p>",
@@ -77,7 +77,7 @@
    "tieu_de": "Khoá VẬN HÀNH AGENT: dựng trợ lý AI tự làm việc theo não của bạn",
    "mo_ta": "16 bài cầm tay chỉ việc: cài NAOSO, dựng đội nhân viên AI, hẹn giờ cho AI tự làm, chatbot khách hàng, chạy 24/7 với tên miền riêng.",
    "bia": "Khoá VẬN HÀNH AGENT|trợ lý AI tự làm|việc mỗi ngày",
-   "anh": "dai-cuoi-3.jpg"
+   "anh": "blog/anh-05.jpg"
   },
   {
    "slug": "kh-28-ngay-vibe-coding",
@@ -86,7 +86,7 @@
    "tieu_de": "Khoá 28 NGÀY VIBE CODING: tự làm bot chăm khách Zalo, Facebook bằng AI",
    "mo_ta": "28 ngày tự tay làm bot chăm sóc khách trả lời tự động trên Zalo và Facebook bằng AI, không cần biết code.",
    "bia": "28 ngày Vibe Coding|tự làm chatbot|không cần code",
-   "anh": "dai-cuoi.jpg"
+   "anh": "blog/anh-06.jpg"
   },
   {
    "slug": "kh-lam-video-khong-len-hinh",
@@ -95,7 +95,7 @@
    "tieu_de": "Khoá LÀM VIDEO KHÔNG CẦN LÊN HÌNH: thu âm giọng là có video mỗi ngày",
    "mo_ta": "Thu âm giọng, ghép hình quay sẵn, video Veo 3 và nguồn miễn phí thành video đăng mỗi ngày. 14 bài đi từng bước.",
    "bia": "Làm video|không cần lên hình|đăng mỗi ngày",
-   "anh": "dai-cuoi-3.jpg"
+   "anh": "blog/anh-07.jpg"
   },
   {
    "slug": "kh-khoa-tang-video-ai",
@@ -104,7 +104,7 @@
    "tieu_de": "Khoá tặng miễn phí: làm video AI đầu tiên trong 30 phút",
    "mo_ta": "10 bài ngắn làm video AI có tiếng nói với ChatGPT hoặc Gemini và Google Flow, kèm 50 câu lệnh cho 10 ngành. Miễn phí.",
    "bia": "Khoá tặng miễn phí|video AI đầu tiên|trong 30 phút",
-   "anh": "dai-cuoi.jpg"
+   "anh": "blog/anh-13.jpg"
   }
  ]
 }

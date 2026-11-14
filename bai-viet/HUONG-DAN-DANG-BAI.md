@@ -13,7 +13,7 @@ Cột: A NGÀY · B CHUYÊN MỤC · C TIÊU ĐỀ · D TỪ KHÓA SEO · E BÀI
    - `phut`, `ngay` (dd/mm/yyyy), `iso` (yyyy-mm-dd)
    - `tieu_de`: viết thường như câu bình thường (không VIẾT HOA cả câu)
    - `bia`: 3 dòng cho ảnh bìa, cách nhau bằng `|`, mỗi dòng ≤ 22 ký tự, dòng 2 được tô vàng
-   - `anh`: luân phiên `dai-cuoi.jpg` / `dai-cuoi-3.jpg`
+   - `anh`: BỎ TRỐNG trường này. `_bia.py` tự chọn ảnh thật của anh Đại trong `img/blog/` (ảnh dùng ít nhất, không trùng bài gần đây) để bìa mỗi bài một ảnh khác, không nhàm. Có ảnh mới của anh thì thêm vào `img/blog/anh-XX.jpg` (dọc 720x1080, mặt nằm trọn trong khung, sáng, tươi)
    - `mo_ta`: 1–2 câu (≤ 160 ký tự), có từ khoá SEO
    - `tra_loi`: ô "Trả lời nhanh" 2–3 câu, trả lời thẳng câu hỏi của tiêu đề
    - `than`: HTML, các mục `<h2>`, đoạn `<p>` ngắn, danh sách `<ul>/<ol>`, có ví dụ cụ thể
