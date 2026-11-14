@@ -38,9 +38,13 @@ p{margin:0 0 14px}
 .menu a:hover{color:var(--gach)}
 .mo-menu{display:none;margin-left:auto;background:none;border:0;font-size:26px;color:var(--navy);cursor:pointer}
 @media(max-width:860px){
-  .menu{display:none;position:absolute;top:66px;left:0;right:0;background:var(--kem);flex-direction:column;align-items:flex-start;padding:16px 24px 22px;border-bottom:1px solid var(--vien)}
-  .menu.mo{display:flex}
-  .mo-menu{display:block}
+  /* điện thoại: menu luôn hiện thành hàng nút kéo ngang, không giấu sau nút ☰ */
+  .dau .khung{flex-wrap:wrap;height:auto;padding-top:10px;gap:0}
+  .mo-menu{display:none!important}
+  .menu{display:flex;order:3;width:100%;margin:8px 0 0;gap:8px;overflow-x:auto;padding:0 0 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .menu::-webkit-scrollbar{display:none}
+  .menu a{white-space:nowrap;padding:8px 13px;border:1px solid var(--vien-dam);border-radius:999px;background:#fff;font-size:14px;font-weight:600}
+  .menu a.nut{background:var(--vang);border-color:#E9BC12}
 }
 /* khối */
 .khoi{padding:var(--khoi) 0}
@@ -177,3 +181,23 @@ p{margin:0 0 14px}
 .ba-buoc span{font-size:14px;color:var(--mo);line-height:1.45}
 @media(max-width:760px){.ba-buoc{grid-template-columns:1fr}}
 .the .xem{margin-top:auto;padding-top:12px;font-weight:700;color:var(--gach);text-decoration:none}
+
+/* cửa hàng: sản phẩm, khoá học đang bán */
+.cua-hang{padding-top:56px}
+.nhom-tieu{font-family:var(--sans);font-size:18px;font-weight:700;color:var(--navy);margin:34px 0 14px;scroll-margin-top:120px}
+.sp-the{background:#fff;border:1px solid var(--vien);border-radius:16px;padding:22px 20px;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
+.sp-the:hover{box-shadow:0 10px 28px rgba(4,20,49,.08);transform:translateY(-2px)}
+.sp-dau{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.sp-bt{font-size:30px;line-height:1}
+.sp-nhan{font:700 11px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;background:var(--vang-nhat);color:var(--gach);padding:6px 9px;border-radius:999px}
+.sp-the h3{font-family:var(--sans);font-size:20px;font-weight:800;letter-spacing:0;margin-bottom:8px}
+.sp-the p{font-size:15.5px;color:var(--mo);margin-bottom:12px;flex:1}
+.sp-the .sp-gia{flex:0;font-size:18px;font-weight:800;color:var(--navy);margin-bottom:14px}
+.sp-gia s{color:#8a93a8;font-weight:500;font-size:15px;margin-right:4px}.sp-gia .do{color:var(--gach)}
+.sp-nut{display:flex;gap:8px;flex-wrap:wrap}
+.sp-nut .nut{justify-content:center}
+#san-pham,#cong-cu{scroll-margin-top:110px}
+.ke-nhanh{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:22px auto 0;max-width:760px}
+.ke-nhanh a{background:#fff;border:1px solid var(--vien-dam);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600;text-decoration:none;color:var(--navy)}
+.ke-nhanh a:hover{border-color:var(--gach);color:var(--gach)}
+@media(max-width:860px){.mo-dau{padding:30px 0 36px}.mo-dau .phu{font-size:16.5px;margin-bottom:20px}.mo-dau h1{font-size:36px;margin-bottom:14px}.mo-dau .nhan{margin-bottom:10px}.cua-hang{padding-top:40px}}
