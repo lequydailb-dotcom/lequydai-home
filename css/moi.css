@@ -271,3 +271,14 @@ p{margin:0 0 14px}
 .dai-ma code{font:800 16px var(--sans);color:var(--reu);background:#fff;padding:4px 8px;border-radius:6px}
 .giua{text-align:center;margin-left:auto;margin-right:auto}
 .thanh .nut{white-space:nowrap}
+/* lối tắt dưới phần mở đầu */
+.loi-tat{background:#0B302F;border-top:1px solid rgba(255,255,255,.08)}
+.loi-tat .khung{display:grid;grid-template-columns:repeat(4,1fr)}
+.loi-tat a{display:flex;flex-direction:column;gap:2px;padding:18px 16px;text-decoration:none;border-left:1px solid rgba(255,255,255,.08)}
+.loi-tat a:first-child{border-left:0}
+.loi-tat a:hover{background:rgba(255,255,255,.05)}
+.loi-tat b{color:#fff;font-size:16px}.loi-tat b:after{content:" →";color:#FD7800}
+.loi-tat small{color:#A9C4BA;font-size:13px;line-height:1.35}
+#blog{scroll-margin-top:90px}
+@media(max-width:760px){.loi-tat .khung{grid-template-columns:1fr 1fr;padding:0}.loi-tat a{border-top:1px solid rgba(255,255,255,.08);padding:14px 16px}.loi-tat a:nth-child(odd){border-left:0}}
+@media(max-width:860px){.menu{flex-wrap:wrap;overflow-x:visible}.menu a{padding:7px 12px}}
