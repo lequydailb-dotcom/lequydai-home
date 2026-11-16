@@ -282,3 +282,15 @@ p{margin:0 0 14px}
 #blog{scroll-margin-top:90px}
 @media(max-width:760px){.loi-tat .khung{grid-template-columns:1fr 1fr;padding:0}.loi-tat a{border-top:1px solid rgba(255,255,255,.08);padding:14px 16px}.loi-tat a:nth-child(odd){border-left:0}}
 @media(max-width:860px){.menu{flex-wrap:wrap;overflow-x:visible}.menu a{padding:7px 12px}}
+/* sửa 16-11: giá không bị cắt trên điện thoại, chọn đường gọn hơn */
+.khs .g{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 6px;line-height:1.2}
+.khs .g s{margin-right:0}
+@media(max-width:560px){
+  .duong{grid-template-columns:1fr 1fr;gap:10px}
+  .duong a{padding:14px 12px;gap:5px}
+  .duong .i{width:36px;height:36px}.duong .i svg{width:20px;height:20px}
+  .duong b{font-size:15.5px}.duong p{display:none}.duong .di{font-size:13.5px}
+  .duong small{font-size:11px}
+  .khs .g{font-size:16px}
+}
+.dai-ma{flex-wrap:wrap}
