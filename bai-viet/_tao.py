@@ -7,10 +7,10 @@ ZALO = 'https://zalo.me/g/a9my3sx1ov0fsihenx6e'
 DAU = '''<header class="dau"><div class="khung">
 <a href="/"><img src="/img/logo-duong.png" alt="ĐẠI LÊ AI"></a>
 <button class="mo-menu" aria-label="Mở menu" onclick="document.querySelector('.menu').classList.toggle('mo')">☰</button>
-<nav class="menu"><a href="/#san-pham">Sản phẩm</a><a href="/#khoa-hoc">Khoá học</a><a href="https://congcu.lequydai.com">Công cụ miễn phí</a><a href="/bai-viet/">Blog</a><a href="https://hoc.lequydai.com">Học viên</a><a class="nut nut-nho" href="%s">Nhóm Zalo miễn phí</a></nav>
+<nav class="menu"><a href="/#san-pham">Sản phẩm</a><a href="/#khoa-hoc">Khoá học</a><a href="https://lequydai.com/congcu/">Công cụ miễn phí</a><a href="/bai-viet/">Blog</a><a href="https://hoc.lequydai.com">Học viên</a><a class="nut nut-nho" href="%s">Nhóm Zalo miễn phí</a></nav>
 </div></header>''' % ZALO
 CHAN = '''<footer class="chan"><div class="khung"><img src="/img/logo-duong.png" alt="ĐẠI LÊ AI">
-<a href="/#san-pham">Sản phẩm</a><a href="/#khoa-hoc">Khoá học</a><a href="https://congcu.lequydai.com">Công cụ</a><a href="/bai-viet/">Blog</a><a href="https://hoc.lequydai.com">Học viên</a><a href="https://zalo.me/0972782782">Zalo 0972 782 782</a><a href="/dieu-khoan/">Điều khoản</a><a href="/chinh-sach-bao-mat/">Chính sách bảo mật</a>
+<a href="/#san-pham">Sản phẩm</a><a href="/#khoa-hoc">Khoá học</a><a href="https://lequydai.com/congcu/">Công cụ</a><a href="/bai-viet/">Blog</a><a href="https://hoc.lequydai.com">Học viên</a><a href="https://zalo.me/0972782782">Zalo 0972 782 782</a><a href="/dieu-khoan/">Điều khoản</a><a href="/chinh-sach-bao-mat/">Chính sách bảo mật</a>
 <span style="width:100%%">© 2026 lequydai.com</span></div></footer>
 <div class="thanh"><span>Công cụ miễn phí, hỏi đáp trực tiếp</span><a class="nut nut-nho" href="%s">Nhóm Zalo</a></div>''' % ZALO
 
@@ -18,9 +18,9 @@ CHU_DE = ['Công cụ AI miễn phí', 'Chatbot Zalo chăm khách', 'Làm video 
 
 O = {
  'donmay': ('sang', 'Nhận DỌN MÁY miễn phí', 'File nằm trong tin nhắn đã ghim của nhóm Zalo. Vào nhóm, tải về, 2 nút bấm là xong.', 'Vào nhóm Zalo nhận file →', ZALO),
- 'congcu': ('sang', 'Dùng thử 4 công cụ AI miễn phí của ĐẠI LÊ AI', 'Nói ra chữ, Tóm ảnh, Dọn máy, Cắt nhanh: bấm là có kết quả, không cần mua.', 'Xem 4 công cụ miễn phí →', 'https://congcu.lequydai.com/#mien-phi'),
+ 'congcu': ('sang', 'Dùng thử 4 công cụ AI miễn phí của ĐẠI LÊ AI', 'Nói ra chữ, Tóm ảnh, Dọn máy, Cắt nhanh: bấm là có kết quả, không cần mua.', 'Xem 4 công cụ miễn phí →', 'https://lequydai.com/congcu/#mien-phi'),
  'chu': ('sang', 'Dùng thử NÓI RA CHỮ ngay', 'Chạy trên trình duyệt, miễn phí, chỉ cần khoá Gemini của bạn.', 'Mở chu.lequydai.com →', 'https://chu.lequydai.com'),
- 'zaloai': ('', 'Zalo AI: bot soạn tin trả lời khách cho bạn', 'Bắt đầu bằng chế độ Nháp, bạn duyệt rồi bot mới gửi. Gói 1 năm 368.000đ, gói trọn đời 868.000đ cho 1 máy.', 'Xem Zalo AI →', 'https://congcu.lequydai.com/zalo-ai/'),
+ 'zaloai': ('', 'Zalo AI: bot soạn tin trả lời khách cho bạn', 'Bắt đầu bằng chế độ Nháp, bạn duyệt rồi bot mới gửi. Gói 1 năm 368.000đ, gói trọn đời 868.000đ cho 1 máy.', 'Xem Zalo AI →', 'https://lequydai.com/zalo-ai/'),
  'vanhanh': ('', 'Muốn việc lặp lại tự chạy mỗi ngày?', 'Khoá VẬN HÀNH AGENT chỉ bạn dựng đội nhân viên AI: giao việc, hẹn giờ cho AI tự làm, chatbot trả lời khách. Cầm tay chỉ việc, 16 bài.', 'Xem khoá VẬN HÀNH AGENT →', '/van-hanh/'),
  'video': ('', 'Có chữ rồi, làm luôn thành video', 'Khoá tặng miễn phí: làm video AI đầu tiên trong 30 phút, có giọng nói, không cần lên hình.', 'Nhận khoá tặng →', 'https://hoc.lequydai.com/tang/dang-ky/'),
  'vibe': ('', 'Muốn tự làm chatbot của riêng bạn?', 'Khoá 28 NGÀY VIBE CODING: tự làm bot chăm khách trên Zalo và Facebook bằng AI, mỗi ngày một bước nhỏ.', 'Xem khoá 28 NGÀY VIBE CODING →', '/vibe-coding/'),
