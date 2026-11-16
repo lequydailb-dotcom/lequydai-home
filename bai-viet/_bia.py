@@ -25,15 +25,15 @@ T = '''<html><head><style>
 @font-face{font-family:L;src:url(file://%(D)s/_font/Lora-Variable.ttf)}
 @font-face{font-family:I;font-weight:600;src:url(file://%(D)s/_font/Inter-SemiBold.otf)}
 @font-face{font-family:I;font-weight:700;src:url(file://%(D)s/_font/Inter-Bold.otf)}
-body{margin:0;width:1200px;height:630px;background:#F5F1E6;font-family:I;position:relative;overflow:hidden}
+body{margin:0;width:1200px;height:630px;background:#F4EFE4;font-family:I;position:relative;overflow:hidden}
 .logo{position:absolute;left:64px;top:52px;height:44px}
 .tag{position:absolute;left:64px;top:150px;font:700 20px I;letter-spacing:.08em;text-transform:uppercase;color:#FD7800}
-h1{position:absolute;left:60px;top:190px;width:680px;margin:0;font:600 64px/1.18 L;color:#041431}
-.v{background:linear-gradient(transparent 60%%,#FED227 60%%,#FED227 92%%,transparent 92%%)}
-.web{position:absolute;left:64px;bottom:48px;font:600 20px I;color:#5A6478}
-.anh{position:absolute;right:56px;top:48px;width:360px;height:534px;border-radius:22px;overflow:hidden;border:1px solid #E2DCCB}
+h1{position:absolute;left:60px;top:190px;width:680px;margin:0;font:600 64px/1.18 L;color:#0E3B3A}
+.v{background:linear-gradient(transparent 60%%,#FD7800 60%%,#FD7800 92%%,transparent 92%%)}
+.web{position:absolute;left:64px;bottom:48px;font:600 20px I;color:#4E6461}
+.anh{position:absolute;right:56px;top:48px;width:360px;height:534px;border-radius:22px;overflow:hidden;border:1px solid #E0D8C6}
 .anh img{width:100%%;height:100%%;object-fit:cover;object-position:50%% 25%%}
-.vach{position:absolute;right:0;top:0;bottom:0;width:470px;background:#ECE6D6}
+.vach{position:absolute;right:0;top:0;bottom:0;width:470px;background:#EAE2D2}
 </style></head><body><div class="vach"></div>
 <img class="logo" src="file://%(R)s/img/logo-duong.png">
 <div class="tag">%(cd)s</div><h1>%(t)s</h1><div class="web">lequydai.com/bai-viet</div>
