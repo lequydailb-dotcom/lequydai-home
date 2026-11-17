@@ -117,4 +117,5 @@ function huy(){clearTimeout(timer);st(null);$('pay').style.display='none';$('of'
 function cp(b){const t=$('ma').textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>b.textContent='Đã chép',()=>b.textContent='Bôi đen mã để chép')}
 try{const o=JSON.parse(st()||'null');if(o&&o.access){$('of').style.display='none';$('done').style.display='block';$('ma').textContent=o.access}else if(o&&o.code)show(o)}catch(e){}
 </script>
+<script src="/gt.js?v=1" defer></script>
 </body></html>
