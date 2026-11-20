@@ -169,6 +169,23 @@
     "zaloai"
    ],
    "anh": "blog/anh-11.jpg"
+  },
+  {
+   "slug": "bo-cau-tra-loi-mau-cho-khach",
+   "cd": "Công cụ AI miễn phí",
+   "phut": 3,
+   "ngay": "18/11/2026",
+   "iso": "2026-11-18",
+   "tieu_de": "Bộ câu trả lời mẫu cho khách: cách nhờ ChatGPT hoặc Claude soạn giúp bạn",
+   "bia": "Bộ câu trả lời mẫu|cho khách hay hỏi|nhờ AI soạn giúp",
+   "mo_ta": "Cách nhờ ChatGPT hoặc Claude soạn bộ câu trả lời mẫu cho khách: gom câu hỏi, đưa thông tin thật, đọc lại rồi lưu vào chỗ dễ dán.",
+   "tra_loi": "Gom các câu khách hay hỏi nhất, dán vào ChatGPT hoặc Claude cùng thông tin thật của bạn (giá, giao hàng, đổi trả, cách xưng hô), rồi nhờ viết mỗi câu một câu trả lời ngắn. Bạn đọc lại, sửa cho đúng, lưu vào ghi chú hoặc tin nhắn nhanh để dán khi khách hỏi.",
+   "than": "<p>Một ngày bạn gõ câu \"dạ ship toàn quốc ạ\" bao nhiêu lần? Câu nào khách cũng hỏi, mà lần nào bạn cũng gõ lại từ đầu.</p>\n<p>Bộ câu trả lời mẫu là thứ nên làm đầu tiên khi bạn muốn nhẹ việc trả lời khách. Làm một lần, dùng mỗi ngày, và bản miễn phí của ChatGPT hoặc Claude là đủ để soạn.</p>\n<h2>Bước 1: gom câu khách hay hỏi</h2>\n<p>Mở lại tin nhắn của khách trong vài ngày gần đây. Chép ra những câu lặp lại nhiều nhất: giá, phí giao hàng, bao lâu nhận được, đổi trả thế nào, còn hàng không. Thường chỉ mười đến hai mươi câu là hết.</p>\n<h2>Bước 2: đưa thông tin thật cho AI</h2>\n<p>AI không biết giá và chính sách của bạn. Bạn phải đưa cho nó. Dán vào một lệnh như sau:</p>\n<p><i>\"Tôi bán [sản phẩm]. Giá: [...]. Giao hàng: [...]. Đổi trả: [...]. Tôi xưng em, gọi khách là anh chị. Dưới đây là các câu khách hay hỏi. Hãy viết cho mỗi câu một câu trả lời ngắn, lịch sự, đúng thông tin tôi đưa, không thêm thông tin tôi chưa nói.\"</i></p>\n<h2>Bước 3: đọc lại từng câu</h2>\n<p>Đây là bước không được bỏ. Xem giá, thời gian giao, điều kiện đổi trả có đúng không. Câu nào nghe không giống bạn nói thì sửa lại cho giống.</p>\n<h2>Bước 4: lưu vào chỗ dễ dán</h2>\n<p>Lưu vào ghi chú điện thoại, hoặc phần tin nhắn nhanh của Zalo. Fanpage cũng có chỗ lưu câu trả lời sẵn. Khách hỏi, bạn chọn câu, sửa tên khách rồi gửi.</p>\n<h2>Có nhiều trang thì sao</h2>\n<p>Mỗi trang một bộ riêng, vì giá và giọng nói khác nhau. Làm xong bộ đầu tiên, bạn đưa bộ đó cho AI và nhờ viết lại theo thông tin của trang thứ hai, nhanh hơn làm từ đầu.</p>\n<p>Chuyện giá cả và những lời hứa với khách, bạn vẫn tự quyết. Khi giá hay chính sách đổi, nhớ sửa lại bộ mẫu.</p>\n<p>Câu nào khách hỏi bạn nhiều nhất mỗi ngày? Nhắn Đại qua Zalo 0972 782 782, hoặc vào <a href=\"https://zalo.me/g/a9my3sx1ov0fsihenx6e\">nhóm Zalo</a> để hỏi trực tiếp.</p>",
+   "o": [
+    "congcu",
+    "zaloai"
+   ],
+   "anh": "blog/anh-12.jpg"
   }
  ],
  "khoa_hoc": [
