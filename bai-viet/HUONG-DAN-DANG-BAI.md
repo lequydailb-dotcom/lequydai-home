@@ -18,7 +18,7 @@ Cột: A NGÀY · B CHUYÊN MỤC · C TIÊU ĐỀ · D TỪ KHÓA SEO · E BÀI
    - `tra_loi`: ô "Trả lời nhanh" 2–3 câu, trả lời thẳng câu hỏi của tiêu đề
    - `than`: HTML, các mục `<h2>`, đoạn `<p>` ngắn, danh sách `<ul>/<ol>`, có ví dụ cụ thể
    - `o`: 2 ô giới thiệu cuối bài, chọn trong: congcu, donmay, chu, zaloai, vanhanh, video, vibe (hợp với chuyên mục)
-4. Chạy `python3 bai-viet/_tao.py` rồi `python3 bai-viet/_bia.py` (tự tạo ảnh bìa cho bài mới).
+4. Chạy `python3 bai-viet/_bia.py` TRƯỚC (tự chọn ảnh, ghi trường `anh` vào bai.json, tạo ảnh bìa cho bài mới), rồi mới chạy `python3 bai-viet/_tao.py`. Chạy ngược thứ tự thì `_tao.py` báo lỗi thiếu `anh`.
 5. Commit + push lên nhánh main của repo lequydailb-dotcom/lequydai-home. Trang lên mạng sau 1–2 phút.
 6. Ghi vào Sheet: cột F = https://lequydai.com/bai-viet/<slug>/ · cột G = "Đã đăng".
 
@@ -31,3 +31,8 @@ Cột: A NGÀY · B CHUYÊN MỤC · C TIÊU ĐỀ · D TỪ KHÓA SEO · E BÀI
 - Tên thương hiệu chỉ viết "ĐẠI LÊ AI".
 - Trên web không có ô bình luận: kêu gọi nhắn Zalo 0972 782 782 hoặc vào nhóm Zalo, không ghi "bình luận bên dưới".
 - Bài phải hợp chuyên mục và dẫn khéo về công cụ hoặc khoá học liên quan qua 2 ô cuối bài.
+
+## Khi không đẩy được mã
+- Anh Đại đã đồng ý (21/11/2026) cho gắn kho này với quyền đẩy mã và đẩy thẳng lên nhánh main để đăng blog, chỉ trong thư mục `bai-viet/`.
+- Nếu vẫn bị từ chối quyền: không tìm đường vòng. Viết bài vào cột E, ghi đúng thông báo lỗi vào cột I, và báo anh: "BLOG CHƯA ĐĂNG ĐƯỢC HÔM NAY: anh mở chat nhắn 'đăng blog' để em đăng tay."
+- Không viết chủ đề "bán online không ôm kho / tìm nguồn hàng" (anh nói 17/11/2026 không phải việc chính).
