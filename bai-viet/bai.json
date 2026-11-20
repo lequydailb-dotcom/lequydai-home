@@ -67,6 +67,108 @@
     "congcu",
     "zaloai"
    ]
+  },
+  {
+   "slug": "chatbot-zalo-cham-khach-la-gi",
+   "cd": "Chatbot Zalo chăm khách",
+   "phut": 3,
+   "ngay": "15/11/2026",
+   "iso": "2026-11-15",
+   "tieu_de": "Chatbot Zalo chăm khách là gì, người bán nhỏ có cần không",
+   "bia": "Chatbot Zalo|chăm khách là gì?|Bán nhỏ có cần không?",
+   "mo_ta": "Chatbot Zalo chăm khách là trợ lý AI soạn câu trả lời theo thông tin bạn dạy sẵn. Ba câu hỏi để biết bạn đã cần dùng hay chưa.",
+   "tra_loi": "Chatbot Zalo chăm khách là trợ lý AI đọc tin nhắn của khách rồi soạn câu trả lời theo giá, địa chỉ, chính sách bạn đã nạp sẵn. Người bán nhỏ nên thử khi ngày nào cũng trả lời nhiều câu giống nhau hoặc hay trả lời trễ. Mỗi ngày chỉ vài tin nhắn thì chưa cần vội.",
+   "than": "<p>Khách nhắn Zalo lúc mười giờ đêm, sáng hôm sau bạn mới trả lời thì khách đã hỏi chỗ khác. Chuyện này quen không?</p>\n<p>Chatbot Zalo chăm khách, hiểu đơn giản, là một trợ lý AI đọc tin nhắn của khách rồi soạn câu trả lời theo thông tin bạn đã dạy sẵn: giá, địa chỉ, giờ mở cửa, chính sách đổi trả.</p>\n<h2>Có hai kiểu chatbot Zalo</h2>\n<p>Kiểu một: bot tự trả lời luôn. Kiểu hai: bot chỉ soạn nháp, bạn đọc rồi bấm gửi. Người mới nên bắt đầu bằng kiểu soạn nháp, vì an toàn, không sợ bot nói sai với khách.</p>\n<p>Ví dụ bạn bán mỹ phẩm. Khách hỏi: \"Kem này dùng cho da dầu được không?\". Bot soạn sẵn câu trả lời dựa trên mô tả sản phẩm bạn đã nạp. Bạn đọc, sửa một hai chữ cho đúng giọng của mình, rồi gửi. Thay vì ngồi gõ từng câu, bạn chỉ còn việc duyệt.</p>\n<h2>Người bán nhỏ có cần chatbot Zalo không</h2>\n<p>Tự hỏi ba câu:</p>\n<ol><li>Mỗi ngày bạn có trả lời nhiều câu hỏi giống nhau không?</li>\n<li>Bạn có hay trả lời trễ vì đang bận không?</li>\n<li>Bạn có phải gõ lại giá và chính sách nhiều lần không?</li></ol>\n<p>Có từ hai câu trở lên thì nên thử. Nếu mỗi ngày chỉ có vài tin nhắn thì chưa cần vội. Bạn cứ nhờ ChatGPT hoặc Claude soạn trước một bộ câu trả lời mẫu, lưu lại và dán khi cần.</p>\n<h2>Một lưu ý nhỏ</h2>\n<p>Chuyện giá cả và những tình huống nhạy cảm, bạn vẫn nên tự quyết. Bot lo phần lặp lại, còn bạn giữ phần quan trọng.</p>\n<p>Bạn đang trả lời khách trên Zalo kiểu nào: tự gõ hết, hay đã có mẫu sẵn? Nhắn Đại qua Zalo 0972 782 782, hoặc vào <a href=\"https://zalo.me/g/a9my3sx1ov0fsihenx6e\">nhóm Zalo</a> để hỏi trực tiếp.</p>",
+   "o": [
+    "zaloai",
+    "vibe"
+   ],
+   "anh": "blog/anh-05.jpg"
+  },
+  {
+   "slug": "nhieu-fanpage-5-viec-ngon-thoi-gian",
+   "cd": "Vận hành bằng Agent",
+   "phut": 3,
+   "ngay": "16/11/2026",
+   "iso": "2026-11-16",
+   "tieu_de": "Nhiều fanpage một người quản lý: 5 việc ngốn nhiều thời gian nhất",
+   "bia": "Nhiều fanpage|một người quản lý|5 việc ngốn thời gian",
+   "mo_ta": "Quản lý nhiều fanpage một mình: 5 việc ngốn thời gian nhất mỗi ngày và cách làm nhẹ từng việc bằng ChatGPT hoặc Claude.",
+   "tra_loi": "Năm việc ngốn thời gian nhất khi một người quản lý nhiều fanpage: nghĩ nội dung cho từng trang, làm ảnh và video, trả lời bình luận và tin nhắn, đăng bài đúng giờ, và nhớ trang nào đang cần gì. Đừng sửa cả năm cùng lúc, hãy chọn việc làm bạn mệt nhất và làm trước một tuần.",
+   "than": "<p>Bạn có ba bốn fanpage, mà mỗi sáng mở máy lên là loay hoay không biết bắt đầu từ trang nào?</p>\n<p>Tôi gặp nhiều người bán một mình ở đúng tình cảnh này. Không phải họ lười. Chỉ là mỗi trang đều có một đống việc nhỏ, cộng lại là hết ngày.</p>\n<h2>1. Nghĩ nội dung cho từng trang</h2>\n<p>Mỗi trang một kiểu khách, nên không thể đăng y hệt nhau. Cách gọn: viết một bài gốc, rồi nhờ ChatGPT hoặc Claude đổi giọng cho từng trang. Bạn chỉ đọc và sửa vài chữ.</p>\n<h2>2. Làm ảnh và video</h2>\n<p>Dùng mẫu có sẵn, thay chữ và ảnh. Một mẫu dùng lại được cho nhiều trang, chỉ đổi màu và tên.</p>\n<h2>3. Trả lời bình luận và tin nhắn</h2>\n<p>Đây là việc nuốt thời gian nhất vì khách nhắn bất cứ lúc nào. Hãy gom các câu hỏi lặp lại (giá, địa chỉ, giờ mở cửa) thành một bộ câu trả lời mẫu dùng chung cho mọi trang. Chuyện giá và tình huống nhạy cảm thì bạn vẫn tự quyết.</p>\n<h2>4. Đăng bài đúng giờ</h2>\n<p>Soạn sẵn cả tuần vào một buổi, rồi hẹn giờ. Đỡ cảnh chiều nào cũng sực nhớ chưa đăng.</p>\n<h2>5. Nhớ trang nào đang cần gì</h2>\n<p>Lập một bảng Google Sheets đơn giản: mỗi dòng một trang, ghi bài đã đăng, tin nhắn chưa trả lời, việc cần làm hôm nay. Nhìn một lần là biết.</p>\n<h2>Bắt đầu từ đâu</h2>\n<p>Đừng làm cả năm việc cùng lúc. Chọn việc nào bạn thấy mệt nhất, làm trong một tuần cho quen, rồi mới thêm việc thứ hai. Bạn tự bấm giờ trước và sau để biết mình đỡ được bao nhiêu, vì con số thật của bạn mới đáng tin.</p>\n<p>Việc nào đang ngốn thời gian của bạn nhất? Nhắn Đại qua Zalo 0972 782 782, hoặc vào <a href=\"https://zalo.me/g/a9my3sx1ov0fsihenx6e\">nhóm Zalo</a> để hỏi trực tiếp.</p>",
+   "o": [
+    "vanhanh",
+    "congcu"
+   ],
+   "anh": "blog/anh-06.jpg"
+  },
+  {
+   "slug": "khach-nhan-dem-khuya-khong-bo-sot",
+   "cd": "Chatbot Zalo chăm khách",
+   "phut": 3,
+   "ngay": "17/11/2026",
+   "iso": "2026-11-17",
+   "tieu_de": "Khách nhắn đêm khuya: 4 cách không bỏ sót khi bạn có nhiều trang",
+   "bia": "Khách nhắn đêm khuya|4 cách không bỏ sót|khi có nhiều trang",
+   "mo_ta": "Khách nhắn đêm khuya lúc bạn đã ngủ: 4 cách không bỏ sót tin nhắn khi bạn có nhiều trang, không cần thức khuya.",
+   "tra_loi": "Bốn cách để không bỏ sót khách nhắn đêm khuya: đặt tin nhắn chào tự động, soạn sẵn bộ câu trả lời mẫu, dùng chế độ nháp của chatbot để có sẵn câu trả lời qua đêm, và dành một khung giờ cố định mỗi ngày để dọn tin. Cách nào cũng làm được mà không cần thức khuya.",
+   "than": "<p>Mười một giờ đêm, khách nhắn hỏi giá. Bạn đã ngủ. Sáng ra mở máy thì tin nhắn nằm lẫn giữa hàng chục tin khác.</p>\n<p>Có nhiều trang thì chuyện này càng dễ xảy ra. Khách không chờ lâu, họ hỏi chỗ khác. Dưới đây là 4 cách để không bỏ sót.</p>\n<h2>Cách 1: đặt tin nhắn chào tự động</h2>\n<p>Mỗi trang cài một câu chào ngắn: cảm ơn đã nhắn, giờ trả lời của bạn, và hỏi khách cần gì. Khách biết mình đã được ghi nhận, bớt sốt ruột.</p>\n<h2>Cách 2: soạn sẵn bộ câu trả lời mẫu</h2>\n<p>Gom các câu hay gặp như giá, địa chỉ, cách đặt hàng, đổi trả. Nhờ ChatGPT hoặc Claude viết sẵn, bạn đọc lại rồi lưu. Sáng ra chỉ việc dán và sửa tên khách.</p>\n<h2>Cách 3: dùng chế độ nháp của chatbot</h2>\n<p>Chatbot đọc tin và soạn sẵn câu trả lời qua đêm. Sáng bạn duyệt từng câu rồi gửi. Không sợ bot nói sai, mà vẫn không phải gõ lại từ đầu.</p>\n<h2>Cách 4: dành một khung giờ cố định để dọn tin</h2>\n<p>Ví dụ đầu giờ sáng và cuối giờ chiều, mỗi lần mười lăm phút, dọn lần lượt từng trang. Khách nhắn đêm sẽ được trả lời đầu tiên.</p>\n<h2>Ví dụ cụ thể</h2>\n<p>Bạn có hai trang bán đồ gia dụng và mỹ phẩm. Mỗi trang một bộ câu mẫu riêng, cùng một bảng ghi tin chưa trả lời. Sáng mở bảng ra, thấy ngay tin nào cần trả trước.</p>\n<p>Chuyện giá cả và những tình huống nhạy cảm, bạn vẫn nên tự quyết. Máy lo phần lặp lại, bạn giữ phần quan trọng.</p>\n<p>Bạn đang xử lý tin nhắn đêm khuya thế nào? Nhắn Đại qua Zalo 0972 782 782, hoặc vào <a href=\"https://zalo.me/g/a9my3sx1ov0fsihenx6e\">nhóm Zalo</a> để hỏi trực tiếp.</p>",
+   "o": [
+    "zaloai",
+    "vanhanh"
+   ],
+   "anh": "blog/anh-07.jpg"
+  },
+  {
+   "slug": "chatbot-zalo-che-do-nhap",
+   "cd": "Chatbot Zalo chăm khách",
+   "phut": 3,
+   "ngay": "19/11/2026",
+   "iso": "2026-11-19",
+   "tieu_de": "Chatbot Zalo cho chủ nhiều trang: bắt đầu từ chế độ nháp",
+   "bia": "Chatbot Zalo|bắt đầu từ nháp|cho chủ nhiều trang",
+   "mo_ta": "Muốn dùng chatbot Zalo mà sợ bot nói sai với khách? Bắt đầu từ chế độ nháp: bot soạn, bạn duyệt rồi mới gửi. Ba bước để làm.",
+   "tra_loi": "Chủ nhiều trang nên bắt đầu dùng chatbot Zalo ở chế độ nháp: bot đọc tin của khách và soạn sẵn câu trả lời nhưng chưa gửi, bạn đọc, sửa vài chữ rồi mới bấm gửi. Bạn vẫn giữ quyền quyết mà không phải gõ lại từ đầu. Chỉ cho bot tự gửi khi đã đọc nháp đủ nhiều và thấy bot trả lời đúng.",
+   "than": "<p>Bạn có ba bốn trang bán hàng, mỗi trang khách nhắn một kiểu, mà bạn chỉ có hai bàn tay. Muốn dùng chatbot cho đỡ việc nhưng lại sợ bot nói sai với khách?</p>\n<p>Cách tôi hay chỉ cho người mới là bắt đầu từ chế độ nháp. Bot đọc tin của khách, soạn sẵn câu trả lời, nhưng chưa gửi đi. Bạn đọc, sửa vài chữ rồi mới bấm gửi.</p>\n<h2>Vì sao chế độ nháp hợp với chủ nhiều trang</h2>\n<p>Mỗi trang có giá, chính sách và giọng nói riêng. Nếu để bot tự gửi ngay, chỉ cần nhầm một câu là khách hiểu sai. Ở chế độ nháp, bạn lướt qua và sửa kịp thời.</p>\n<h2>Ví dụ cụ thể</h2>\n<p>Bạn có hai trang: một trang bán đồ gia dụng, một trang bán mỹ phẩm. Mỗi trang bạn nạp cho bot một bộ thông tin riêng: giá, địa chỉ, cách đặt hàng, đổi trả. Khách hỏi gì, bot soạn đúng theo bộ của trang đó. Bạn chỉ còn việc duyệt từng câu.</p>\n<h2>Ba bước để bắt đầu</h2>\n<ol><li>Gom các câu khách hay hỏi nhất của mỗi trang, nhờ ChatGPT hoặc Claude viết sẵn câu trả lời mẫu.</li>\n<li>Nạp các câu đó vào bot, bật chế độ nháp.</li>\n<li>Dùng thử một tuần, câu nào bot soạn chưa hợp thì sửa lại trong bộ mẫu.</li></ol>\n<h2>Khi nào nên cho bot tự gửi</h2>\n<p>Chỉ khi bạn đã đọc nháp đủ nhiều và thấy bot trả lời đúng ở các câu đơn giản. Chuyện giá cả và những tình huống nhạy cảm, bạn vẫn nên tự quyết.</p>\n<p>Bạn đang trả lời khách trên mấy trang, và trang nào mất nhiều thời gian nhất? Nhắn Đại qua Zalo 0972 782 782, hoặc vào <a href=\"https://zalo.me/g/a9my3sx1ov0fsihenx6e\">nhóm Zalo</a> để hỏi trực tiếp.</p>",
+   "o": [
+    "zaloai",
+    "vibe"
+   ],
+   "anh": "blog/anh-09.jpg"
+  },
+  {
+   "slug": "5-viec-lap-lai-nen-giao-cho-ai",
+   "cd": "Vận hành bằng Agent",
+   "phut": 3,
+   "ngay": "20/11/2026",
+   "iso": "2026-11-20",
+   "tieu_de": "5 việc lặp lại của người bán hàng online nên giao cho AI",
+   "bia": "5 việc lặp lại|nên giao cho AI|khi bán hàng online",
+   "mo_ta": "5 việc lặp lại bán hàng online nên giao cho AI: trả lời câu hỏi giống nhau, viết caption, nhắc khách, ghi chép đơn, lên ý tưởng bài đăng.",
+   "tra_loi": "Năm việc lặp lại người bán hàng online nên giao cho AI: trả lời các câu hỏi giống nhau, viết caption, soạn tin nhắc khách, ghi chép đơn và tin cần trả, lên ý tưởng bài đăng cho cả tuần. Việc cần quyết định như giá cả hay lời hứa với khách thì bạn vẫn tự giữ.",
+   "than": "<p>Cuối ngày nhìn lại, bạn thấy mình làm gì nhiều nhất: bán hàng, hay lặp đi lặp lại những việc nhỏ giống hệt hôm qua?</p>\n<p>Việc lặp lại là loại việc hợp nhất để giao cho AI. Dưới đây là 5 việc người bán hàng online hay mất thời gian nhất, kèm cách giao cho ChatGPT hoặc Claude.</p>\n<h2>1. Trả lời câu hỏi giống nhau</h2>\n<p>Giá bao nhiêu, ship thế nào, đổi trả ra sao. Gom các câu này, nhờ AI viết sẵn bộ câu trả lời mẫu, bạn đọc lại rồi lưu để dùng mỗi ngày.</p>\n<h2>2. Viết caption</h2>\n<p>Dán mô tả sản phẩm vào, nhờ AI viết vài caption ngắn. Bạn chọn câu ưng nhất và sửa cho giống giọng mình.</p>\n<h2>3. Soạn tin nhắc khách</h2>\n<p>Khách hỏi giá rồi im lặng, khách chưa nhận hàng. AI soạn sẵn tin nhắc nhẹ nhàng, bạn chỉ thêm tên khách.</p>\n<h2>4. Ghi chép đơn và tin cần trả</h2>\n<p>Lập một bảng Google Sheets đơn giản, nhờ AI gợi ý các cột cần có. Nhìn vào bảng là biết hôm nay cần làm gì.</p>\n<h2>5. Lên ý tưởng bài đăng cho cả tuần</h2>\n<p>Một buổi ngồi nhờ AI liệt kê ý tưởng bảy ngày, bạn chọn và chỉnh. Đỡ cảnh mỗi sáng ngồi nghĩ hôm nay đăng gì.</p>\n<h2>Bắt đầu từ đâu</h2>\n<p>Đừng giao cả năm việc cùng lúc. Chọn việc làm bạn mệt nhất, thử một tuần rồi mới thêm việc kế tiếp. Việc nào cần quyết định, như giá cả hay lời hứa với khách, bạn vẫn nên tự giữ.</p>\n<p>Việc nào đang ngốn thời gian của bạn nhất? Nhắn Đại qua Zalo 0972 782 782, hoặc vào <a href=\"https://zalo.me/g/a9my3sx1ov0fsihenx6e\">nhóm Zalo</a> để hỏi trực tiếp.</p>",
+   "o": [
+    "vanhanh",
+    "congcu"
+   ],
+   "anh": "blog/anh-10.jpg"
+  },
+  {
+   "slug": "tu-dong-hoa-fanpage-viec-nao-truoc",
+   "cd": "Vận hành bằng Agent",
+   "phut": 3,
+   "ngay": "21/11/2026",
+   "iso": "2026-11-21",
+   "tieu_de": "Hệ thống cho người bán nhiều fanpage: nên tự động hóa việc nào trước",
+   "bia": "Bán nhiều fanpage|tự động hóa|việc nào trước?",
+   "mo_ta": "Tự động hóa fanpage nên bắt đầu từ đâu? Thứ tự ba việc nên làm trước và những việc người bán nhiều trang nên tự giữ.",
+   "tra_loi": "Việc nào lặp lại nhiều nhất và ít cần suy nghĩ nhất thì tự động hóa trước. Với người bán nhiều fanpage, thứ tự nên là: trả lời câu hỏi giống nhau, rồi đăng bài theo lịch, rồi ghi chép và nhắc việc. Giá cả, lời hứa với khách và tình huống nhạy cảm thì bạn tự quyết.",
+   "than": "<p>Bạn có ba bốn fanpage và nghe ai cũng bảo hãy tự động hóa, nhưng không biết nên bắt đầu từ việc nào?</p>\n<p>Tôi hay chỉ cho người bán một mình một nguyên tắc đơn giản: việc nào lặp lại nhiều nhất, ít cần suy nghĩ nhất thì tự động hóa trước. Việc cần quyết định thì bạn giữ.</p>\n<h2>Làm trước: trả lời câu hỏi giống nhau</h2>\n<p>Giá, địa chỉ, giờ mở cửa, đổi trả. Nhờ ChatGPT hoặc Claude viết sẵn bộ câu trả lời mẫu cho từng trang, rồi dùng chatbot ở chế độ nháp để soạn sẵn. Bạn chỉ duyệt và gửi.</p>\n<h2>Làm thứ hai: đăng bài theo lịch</h2>\n<p>Bạn soạn cả tuần trong một buổi, rồi hẹn giờ đăng. Mỗi trang một khung giờ riêng, đỡ cảnh chiều nào cũng sực nhớ chưa đăng.</p>\n<h2>Làm thứ ba: ghi chép và nhắc việc</h2>\n<p>Một bảng Google Sheets: mỗi dòng một trang, ghi bài đã đăng, tin chưa trả lời, việc cần làm. Nhờ AI gợi ý các cột cần có.</p>\n<h2>Việc nên giữ lại</h2>\n<p>Giá cả, lời hứa với khách, những tình huống nhạy cảm hay khi khách đang bực. Những việc này bạn tự quyết.</p>\n<h2>Ví dụ cụ thể</h2>\n<p>Bạn có hai trang bán đồ gia dụng và mỹ phẩm. Tuần đầu chỉ làm bộ câu trả lời mẫu cho hai trang. Tuần hai thêm lịch đăng bài. Tuần ba thêm bảng ghi chép. Mỗi lần chỉ thêm một việc, thấy ổn mới thêm tiếp.</p>\n<p>Bạn tự bấm giờ trước và sau mỗi việc để biết mình đỡ được bao nhiêu thời gian, vì con số thật của bạn mới đáng tin.</p>\n<p>Việc nào đang ngốn thời gian của bạn nhất? Nhắn Đại qua Zalo 0972 782 782, hoặc vào <a href=\"https://zalo.me/g/a9my3sx1ov0fsihenx6e\">nhóm Zalo</a> để hỏi trực tiếp.</p>",
+   "o": [
+    "vanhanh",
+    "zaloai"
+   ],
+   "anh": "blog/anh-11.jpg"
   }
  ],
  "khoa_hoc": [

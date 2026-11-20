@@ -2,7 +2,7 @@
 <html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blog – ĐẠI LÊ AI</title>
 <meta name="description" content="Bài viết dễ làm về AI cho người kinh doanh: công cụ miễn phí, chatbot Zalo, làm video bằng AI, vận hành bằng Agent, Vibe Coding.">
-<link rel="icon" href="/img/cover-square.jpg?v=20261105"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/moi.css?v=10"></head>
+<link rel="icon" href="/img/cover-square.jpg?v=20261105"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/moi.css?v=1"></head>
 <body><header class="dau"><div class="khung">
 <a href="/"><img src="/img/logo-duong.png" alt="ĐẠI LÊ AI"></a>
 <button class="mo-menu" aria-label="Mở menu" onclick="document.querySelector('.menu').classList.toggle('mo')">☰</button>
@@ -21,5 +21,4 @@
 <script>
 function ve(cd){document.getElementById('ds').innerHTML=BAI_VIET.filter(function(b){return !cd||b.cd===cd}).map(function(b){return '<a class="the-bai" href="'+(b.url||'/bai-viet/'+b.slug+'/')+'"><img src="/bai-viet/anh/'+b.slug+'.jpg" alt="" loading="lazy"><div class="nd"><span class="nhan">'+(b.loai?'Khoá học · ':'')+b.cd+'</span><h3>'+b.tieu_de+'</h3><p>'+b.mo_ta+'</p></div></a>'}).join('')||'<p class="phu">Chủ đề này sắp có bài, bạn quay lại sau nhé.</p>'}
 document.querySelectorAll('.loc button').forEach(function(x){x.onclick=function(){document.querySelectorAll('.loc button').forEach(function(y){y.classList.remove('on')});x.classList.add('on');ve(x.dataset.cd)}});ve('');
-</script><script src="/gt.js?v=1" defer></script>
-</body></html>
+</script></body></html>
