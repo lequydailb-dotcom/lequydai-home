@@ -295,3 +295,12 @@ p{margin:0 0 14px}
 }
 .dai-ma{flex-wrap:wrap}
 @media(max-width:860px){.dau{position:relative}.dau .khung{padding-bottom:2px}}
+
+/* 26-11-2026: câu chốt cuối khối và khối học thử 3 ngày */
+.chot{margin:26px auto 0;text-align:center;max-width:720px;font-size:16.5px;color:#4E6461;line-height:1.55}
+.chot a{color:#B4510A;font-weight:700}
+.nen-dam .chot{color:#CFE3D7}
+.ba-ngay .ngay{background:#fff;border:1.5px solid #CFE3D7;border-radius:16px;padding:22px}
+.ba-ngay .ngay small{display:inline-block;background:#FD7800;color:#0E3B3A;font-weight:800;border-radius:99px;padding:3px 12px;font-size:13.5px}
+.ba-ngay .ngay b{display:block;font-size:19px;margin:10px 0 6px;color:#0E3B3A;line-height:1.3}
+.ba-ngay .ngay p{margin:0;color:#4E6461;font-size:15.5px;line-height:1.55}
