@@ -186,6 +186,57 @@
     "zaloai"
    ],
    "anh": "blog/anh-12.jpg"
+  },
+  {
+   "slug": "giao-viec-cho-ai-khong-bi-chung-chung",
+   "cd": "Vận hành bằng Agent",
+   "phut": 4,
+   "ngay": "26/11/2026",
+   "iso": "2026-11-26",
+   "tieu_de": "Cách giao việc cho ChatGPT hoặc Claude để không bị trả lời chung chung",
+   "bia": "Giao việc cho AI|không bị chung chung|bản giao việc 5 phần",
+   "mo_ta": "Cách giao việc cho ChatGPT hoặc Claude bằng bản giao việc 5 phần: vai trò, mục tiêu, thông tin, tiêu chí, báo cáo. Có mẫu chép sẵn.",
+   "tra_loi": "AI trả lời chung chung vì bạn giao việc bằng một câu ngắn. Hãy giao như giao cho nhân viên mới, đủ 5 phần: vai trò, mục tiêu, thông tin, tiêu chí và cách báo cáo. Kết quả chưa đạt thì sửa phần tiêu chí, đừng sửa lung tung.",
+   "than": "<p>Bạn gõ \"viết cho tôi bài bán hàng\", AI trả về một bài ai dùng cũng được. Tức là không ai dùng được. Nhiều người dừng ở đây và kết luận AI không giúp gì cho việc của mình.</p>\n<p>Lỗi không nằm ở AI. AI không biết bạn bán gì, bán cho ai, nói với khách bằng giọng nào. Bạn chưa nói thì nó phải đoán.</p>\n<h2>Giao việc cho AI như giao cho nhân viên mới</h2>\n<p>Nhân viên mới vào làm, bạn không nói một câu rồi bỏ đi. Bạn nói rõ họ làm vai gì, cần ra cái gì, thông tin ở đâu, thế nào là đạt. Với ChatGPT hoặc Claude cũng vậy. Một bản giao việc tốt có 5 phần:</p>\n<ol><li><b>Vai trò:</b> AI đóng vai ai.</li><li><b>Mục tiêu:</b> làm ra cái gì.</li><li><b>Thông tin:</b> dữ liệu AI cần biết, như giá, cách giao hàng, chính sách đổi trả.</li><li><b>Tiêu chí:</b> thế nào là đạt, ví dụ dài bao nhiêu chữ, xưng hô ra sao.</li><li><b>Báo cáo:</b> trả kết quả theo dạng nào.</li></ol>\n<h2>Mẫu bạn chép và dùng ngay</h2>\n<p><i>\"VAI TRÒ: Bạn là nhân viên chăm sóc khách của shop [tên shop], bán [sản phẩm]. MỤC TIÊU: Viết câu trả lời cho tin nhắn khách bên dưới, giúp khách hiểu rõ và muốn đặt hàng. THÔNG TIN: Giá: [giá]. Giao hàng: [cách giao, phí]. Đổi trả: [chính sách]. TIÊU CHÍ: Dưới 80 chữ. Xưng em, gọi khách là anh chị. Trả lời đúng câu khách hỏi trước. Không thêm thông tin tôi chưa đưa. BÁO CÁO: Đưa 2 phương án để tôi chọn.\"</i></p>\n<p>Thay phần trong ngoặc vuông bằng thông tin thật của bạn, rồi dán tin nhắn của khách vào bên dưới.</p>\n<h2>Kết quả chưa đạt thì sửa ở đâu</h2>\n<p>Đừng viết lại cả bản. Hãy sửa đúng phần tiêu chí. Câu trả lời dài quá thì thêm \"dưới 60 chữ\". Giọng cứng quá thì thêm \"nói như người bán hàng quen, thân thiện\". Bạn cũng có thể dán kết quả chưa ưng vào và nói rõ chỗ chưa đạt, rồi nhờ AI sửa lại phần tiêu chí giúp.</p>\n<h2>Làm một lần, dùng mỗi ngày</h2>\n<p>Chọn việc bạn lặp lại nhiều nhất, ví dụ trả lời khách hỏi giá hoặc viết mô tả sản phẩm. Viết bản giao việc cho việc đó, lưu vào Google Docs. Hôm sau chỉ cần mở ra, dán, đổi tin nhắn của khách.</p>\n<p>Muốn làm thử có người chỉ từng bước? Khoá <a href=\"https://hoc.lequydai.com/ba-ngay/dang-ky/\">học thử miễn phí 3 ngày</a> của ĐẠI LÊ AI có sẵn câu lệnh để bạn chép và dán, mỗi ngày làm ra một sản phẩm thật. Vướng chỗ nào, bạn nhắn Zalo 0972 782 782.</p>",
+   "o": [
+    "vanhanh",
+    "chu"
+   ],
+   "anh": "blog/anh-13.jpg"
+  },
+  {
+   "slug": "tu-lam-trang-gioi-thieu-15-phut",
+   "cd": "Vibe Coding",
+   "phut": 4,
+   "ngay": "26/11/2026",
+   "iso": "2026-11-26",
+   "tieu_de": "Hướng dẫn tự làm trang giới thiệu sản phẩm trong 15 phút, không cần biết code",
+   "bia": "Tự làm trang web|trong 15 phút|không cần biết code",
+   "mo_ta": "Hướng dẫn tự làm trang giới thiệu sản phẩm bằng ChatGPT hoặc Claude trong 15 phút: chuẩn bị nội dung, dán câu lệnh, sửa bằng lời nói.",
+   "tra_loi": "Bạn chuẩn bị tên shop, câu giới thiệu, 3 sản phẩm kèm giá và số Zalo. Dán vào ChatGPT hoặc Claude cùng một câu lệnh mô tả trang bạn muốn. AI viết ra trang chạy được, bạn xem thử trên khung điện thoại rồi sửa bằng lời nói, mỗi lần một hai điều.",
+   "than": "<p>Khách hỏi \"có trang nào xem cho tiện không\", bạn gửi vài tấm ảnh lẻ. Một trang gọn gàng, có đủ sản phẩm, giá và nút nhắn Zalo làm bạn trông chuyên nghiệp hơn hẳn.</p>\n<p>Trước đây muốn có trang phải biết code hoặc thuê người. Giờ bạn mô tả bằng tiếng Việt, ChatGPT hoặc Claude viết ra trang chạy được.</p>\n<h2>Bước 1: chuẩn bị nội dung trong 5 phút</h2>\n<ul><li>Tên shop và một câu giới thiệu.</li><li>Ba sản phẩm hoặc dịch vụ chính, mỗi thứ có tên, giá và một câu mô tả.</li><li>Số Zalo, địa chỉ.</li><li>Lời khách khen thật, nếu bạn có. Không có thì bỏ qua, đừng bịa.</li></ul>\n<h2>Bước 2: dán câu lệnh</h2>\n<p><i>\"Làm cho tôi một trang web giới thiệu, chỉ một tệp HTML, đẹp trên điện thoại. Tên: [tên shop]. Câu giới thiệu: [1 câu]. Sản phẩm: [3 mục, mỗi mục tên, giá, 1 câu mô tả]. Zalo: [số]. Địa chỉ: [địa chỉ]. Yêu cầu: phần đầu có tên và câu giới thiệu thật to, ba thẻ sản phẩm, một nút lớn Nhắn Zalo mở đúng số của tôi, chữ tiếng Việt rõ ràng.\"</i></p>\n<p>Claude hiện trang ngay bên phải, ChatGPT hiện trong khung riêng. Bạn bấm xem thử ở chế độ điện thoại, vì khách của bạn phần lớn xem bằng điện thoại.</p>\n<h2>Bước 3: sửa bằng lời nói</h2>\n<p>Muốn đổi màu, đổi chữ, thêm mục, bạn cứ nói như nói với người làm web: \"Giữ nguyên mọi thứ, chỉ đổi màu nút sang cam\". Mỗi lần chỉ sửa một hai điều để dễ kiểm tra. Sửa nhiều thứ cùng lúc, có chỗ hỏng bạn sẽ không biết do đâu.</p>\n<h2>Hai lỗi hay gặp</h2>\n<ul><li>Đưa thiếu thông tin rồi để AI tự điền. AI sẽ bịa giá và mô tả, bạn phải đọc lại từng dòng.</li><li>Chỉ xem trên máy tính. Trang đẹp trên máy tính chưa chắc gọn trên điện thoại.</li></ul>\n<h2>Bước tiếp theo: đưa trang lên mạng</h2>\n<p>Trang mới nằm trong khung trò chuyện. Để có đường dẫn gửi khách, bạn cần đưa nó lên mạng. Việc này có nơi làm miễn phí và mất thêm khoảng mười lăm phút.</p>\n<p>Cả hai bước làm trang và đưa lên mạng nằm trong Ngày 2 của Khoá <a href=\"https://hoc.lequydai.com/ba-ngay/dang-ky/\">học thử miễn phí 3 ngày</a> của ĐẠI LÊ AI có sẵn câu lệnh để bạn chép và dán, mỗi ngày làm ra một sản phẩm thật. Vướng chỗ nào, bạn nhắn Zalo 0972 782 782.</p>",
+   "o": [
+    "vibe",
+    "congcu"
+   ],
+   "anh": "blog/anh-14.jpg"
+  },
+  {
+   "slug": "mau-qua-tang-mot-trang-hut-khach",
+   "cd": "Công cụ AI miễn phí",
+   "phut": 4,
+   "ngay": "26/11/2026",
+   "iso": "2026-11-26",
+   "tieu_de": "Mẫu quà tặng một trang để khách chủ động nhắn tin cho bạn",
+   "bia": "Quà tặng một trang|khách tự nhắn bạn|làm một lần tặng mãi",
+   "mo_ta": "Mẫu quà tặng một trang cho người bán hàng: chọn mẹo khách hay hỏi, để ChatGPT hoặc Claude phỏng vấn rồi viết, xuất PDF và gửi riêng.",
+   "tra_loi": "Chọn một mẹo khách hay hỏi nhất và làm theo được ngay. Nhờ ChatGPT hoặc Claude hỏi bạn 7 câu rồi gom thành tài liệu một trang, có tên chứa con số và kết quả. Dán vào Google Docs, tải về dạng PDF, rồi tặng cho người để lại lời nhắn.",
+   "than": "<p>Bạn biết nhiều điều mà khách đang cần. Cách chọn cỡ quần áo, cách dưỡng da mùa hanh, lịch chăm cây theo tuần. Những thứ đó nằm trong đầu bạn và trong các tin nhắn trả lời rải rác.</p>\n<p>Gói một mẹo nhỏ thành quà tặng một trang là cách đơn giản nhất để người lạ có lý do nhắn tin cho bạn. Làm một lần, tặng được mãi.</p>\n<h2>Bước 1: chọn một mẹo khách hay hỏi nhất</h2>\n<p>Mẹo phải làm theo được ngay và hẹp. Ví dụ: 7 lỗi làm da mụn nặng hơn, 5 bước chọn cỡ quần áo, lịch chăm cây 4 tuần. Đừng chọn chủ đề rộng kiểu \"tất cả về chăm sóc da\".</p>\n<h2>Bước 2: để AI phỏng vấn bạn</h2>\n<p>Đừng nhờ AI tự viết, vì nó sẽ viết kiến thức chung ai cũng tìm được. Hãy để nó hỏi bạn:</p>\n<p><i>\"Bạn giúp tôi làm quà tặng một trang cho khách. Tôi làm nghề: [nghề]. Khách của tôi: [ai, đang gặp khó gì]. Mẹo tôi muốn tặng: [mẹo]. Hãy hỏi tôi 7 câu, từng câu một, để lấy đúng kinh nghiệm thật của tôi. Sau đó viết tài liệu một trang gồm: tên quà có con số, một câu hứa, các mục ngắn dưới 25 chữ, một lỗi hay gặp, và dòng cuối mời nhắn Zalo [số]. Chỉ dùng kinh nghiệm tôi đã trả lời.\"</i></p>\n<h2>Bước 3: dàn trang và xuất PDF</h2>\n<ol><li>Dán nội dung vào Google Docs, chèn logo hoặc ảnh của bạn.</li><li>Chọn Tệp, Tải xuống, PDF.</li><li>Lưu lên Google Drive, bật chia sẻ cho bất kỳ ai có đường liên kết.</li></ol>\n<h2>Tặng thế nào để có người nhắn</h2>\n<p>Viết một bài đăng nói rõ quà giúp được gì và mời người đọc để lại một từ khoá. Bạn gửi quà riêng cho từng người, đừng dán đường liên kết công khai. Dán công khai thì người ta lấy xong đi luôn, bạn không nói chuyện được với ai.</p>\n<h2>Hai điều nên tránh</h2>\n<ul><li>Hứa quà trong bài đăng rồi mới bắt đầu làm. Hãy làm xong quà trước khi đăng.</li><li>Quà dài cả chục trang. Một trang dùng được ngay có giá trị hơn một tập tài liệu không ai đọc.</li></ul>\n<p>Làm quà và viết bài mời nhận quà là Ngày 3 của Khoá <a href=\"https://hoc.lequydai.com/ba-ngay/dang-ky/\">học thử miễn phí 3 ngày</a> của ĐẠI LÊ AI có sẵn câu lệnh để bạn chép và dán, mỗi ngày làm ra một sản phẩm thật. Vướng chỗ nào, bạn nhắn Zalo 0972 782 782.</p>",
+   "o": [
+    "vanhanh",
+    "congcu"
+   ],
+   "anh": "blog/anh-03.jpg"
   }
  ],
  "khoa_hoc": [
