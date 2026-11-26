@@ -87,4 +87,16 @@ open(f'{D}/index.html', 'w').write(f'''<!DOCTYPE html>
 function ve(cd){{document.getElementById('ds').innerHTML=BAI_VIET.filter(function(b){{return !cd||b.cd===cd}}).map(function(b){{return '<a class="the-bai" href="'+(b.url||'/bai-viet/'+b.slug+'/')+'"><img src="/bai-viet/anh/'+b.slug+'.jpg" alt="" loading="lazy"><div class="nd"><span class="nhan">'+(b.loai?'Khoá học · ':'')+b.cd+'</span><h3>'+b.tieu_de+'</h3><p>'+b.mo_ta+'</p></div></a>'}}).join('')||'<p class="phu">Chủ đề này sắp có bài, bạn quay lại sau nhé.</p>'}}
 document.querySelectorAll('.loc button').forEach(function(x){{x.onclick=function(){{document.querySelectorAll('.loc button').forEach(function(y){{y.classList.remove('on')}});x.classList.add('on');ve(x.dataset.cd)}}}});ve('');
 </script></body></html>''')
+
+# Sơ đồ trang cho công cụ tìm kiếm: tự cập nhật mỗi lần dựng blog (26-11-2026)
+import datetime as _dt
+def _ngay(b):
+    try:
+        d, m, y = b['ngay'].split('/'); return f'{y}-{int(m):02d}-{int(d):02d}'
+    except Exception:
+        return _dt.date.today().isoformat()
+_goc = ['', 'bai-viet/', 'zalo-ai/', 'zalo-ai/mua/', 'naoso/', 'congcu/', 'congcu/giong/', 'congcu/go-bang-giong/', 'congcu/don-may/', 'congcu/cat-nhanh/']
+_u = [f'<url><loc>https://lequydai.com/{p}</loc><lastmod>{_dt.date.today().isoformat()}</lastmod></url>' for p in _goc]
+_u += [f'<url><loc>https://lequydai.com/bai-viet/{b["slug"]}/</loc><lastmod>{_ngay(b)}</lastmod></url>' for b in BAI]
+open(f'{D}/../sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(_u) + '\n</urlset>\n')
 print('ok', len(BAI))

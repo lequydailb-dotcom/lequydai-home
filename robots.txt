@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /cong-tac-vien/
+Sitemap: https://lequydai.com/sitemap.xml
