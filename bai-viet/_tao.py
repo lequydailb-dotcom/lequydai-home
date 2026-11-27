@@ -1,22 +1,24 @@
 # Tạo trang Blog ĐẠI LÊ AI: python3 bai-viet/_tao.py  (chạy ở thư mục gốc repo)
 import json, os, html
 D = os.path.dirname(os.path.abspath(__file__))
-FONT = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/moi.css?v=1">'
+FONT = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/moi.css?v=11">'
 ZALO = 'https://zalo.me/g/a9my3sx1ov0fsihenx6e'
+HOC_THU = 'https://hoc.lequydai.com/ba-ngay/dang-ky/'  # mọi bài blog đều dẫn về khoá học thử miễn phí (27-11-2026)
 
 DAU = '''<header class="dau"><div class="khung">
 <a href="/"><img src="/img/logo-duong.png" alt="ĐẠI LÊ AI"></a>
 <button class="mo-menu" aria-label="Mở menu" onclick="document.querySelector('.menu').classList.toggle('mo')">☰</button>
-<nav class="menu"><a href="/#san-pham">Sản phẩm</a><a href="/#khoa-hoc">Khoá học</a><a href="https://lequydai.com/congcu/">Công cụ miễn phí</a><a href="/bai-viet/">Blog</a><a href="https://hoc.lequydai.com">Học viên</a><a class="nut nut-nho" href="%s">Nhóm Zalo miễn phí</a></nav>
-</div></header>''' % ZALO
+<nav class="menu"><a href="/#khoa-hoc">Khoá học</a><a href="/#combo">Combo</a><a href="/#cong-cu">Dùng thử miễn phí</a><a href="/bai-viet/">Blog</a><a href="https://hoc.lequydai.com">Đăng nhập</a><a class="nut nut-nho" href="%s">Học miễn phí</a></nav>
+</div></header>''' % HOC_THU
 CHAN = '''<footer class="chan"><div class="khung"><img src="/img/logo-duong.png" alt="ĐẠI LÊ AI">
 <a href="/#san-pham">Sản phẩm</a><a href="/#khoa-hoc">Khoá học</a><a href="https://lequydai.com/congcu/">Công cụ</a><a href="/bai-viet/">Blog</a><a href="https://hoc.lequydai.com">Học viên</a><a href="https://zalo.me/0972782782">Zalo 0972 782 782</a><a href="/dieu-khoan/">Điều khoản</a><a href="/chinh-sach-bao-mat/">Chính sách bảo mật</a>
 <span style="width:100%%">© 2026 lequydai.com</span></div></footer>
-<div class="thanh"><span>Công cụ miễn phí, hỏi đáp trực tiếp</span><a class="nut nut-nho" href="%s">Nhóm Zalo</a></div>''' % ZALO
+<div class="thanh"><span>Học thử 3 ngày, mỗi ngày một sản phẩm thật</span><a class="nut nut-nho" href="%s">Học miễn phí</a></div>''' % HOC_THU
 
 CHU_DE = ['Công cụ AI miễn phí', 'Chatbot Zalo chăm khách', 'Làm video bằng AI', 'Vận hành bằng Agent', 'Vibe Coding']
 
 O = {
+ 'hocthu': ('', 'Học thử miễn phí 3 ngày, mỗi ngày làm ra một sản phẩm thật', 'Ngày 1 có trợ lý AI của riêng bạn, Ngày 2 có trang web giới thiệu, Ngày 3 có quà tặng hút khách. Không cần biết code, dùng ChatGPT hoặc Claude bản miễn phí là đủ.', 'Nhận khoá miễn phí →', HOC_THU),
  'donmay': ('sang', 'Nhận DỌN MÁY miễn phí', 'File nằm trong tin nhắn đã ghim của nhóm Zalo. Vào nhóm, tải về, 2 nút bấm là xong.', 'Vào nhóm Zalo nhận file →', ZALO),
  'congcu': ('sang', 'Dùng thử 4 công cụ AI miễn phí của ĐẠI LÊ AI', 'Nói ra chữ, Tóm ảnh, Dọn máy, Cắt nhanh: bấm là có kết quả, không cần mua.', 'Xem 4 công cụ miễn phí →', 'https://lequydai.com/congcu/#mien-phi'),
  'chu': ('sang', 'Dùng thử NÓI RA CHỮ ngay', 'Chạy trên trình duyệt, miễn phí, chỉ cần khoá Gemini của bạn.', 'Mở chu.lequydai.com →', 'https://chu.lequydai.com'),
@@ -37,7 +39,7 @@ def o_html(k):
 
 def trang(b):
     lien = [x for x in BAI if x['slug'] != b['slug']][:2]
-    ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": b['tieu_de'], "description": b['mo_ta'], "datePublished": b['iso'], "author": {"@type": "Person", "name": "Lê Quý Đại"}, "image": f"https://lequydai.com/bai-viet/anh/{b['slug']}.jpg", "publisher": {"@type": "Organization", "name": "ĐẠI LÊ AI"}}
+    ld = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": b['tieu_de'], "description": b['mo_ta'], "datePublished": b['iso'], "author": {"@type": "Person", "name": "Lê Quý Đại"}, "image": f"https://lequydai.com/bai-viet/anh/{b['slug']}.jpg", "publisher": {"@type": "Organization", "name": "ĐẠI LÊ AI", "logo": {"@type": "ImageObject", "url": "https://lequydai.com/img/logo-duong.png"}}, "mainEntityOfPage": f"https://lequydai.com/bai-viet/{b['slug']}/", "dateModified": b['iso']}
     the = ''.join(f'<a class="the-bai" href="/bai-viet/{x["slug"]}/"><img src="/bai-viet/anh/{x["slug"]}.jpg" alt="" loading="lazy"><div class="nd"><span class="nhan">{x["cd"]}</span><h3>{x["tieu_de"]}</h3></div></a>' for x in lien)
     return f'''<!DOCTYPE html>
 <html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +47,7 @@ def trang(b):
 <meta name="description" content="{html.escape(b['mo_ta'])}">
 <meta property="og:title" content="{html.escape(b['tieu_de'])}"><meta property="og:description" content="{html.escape(b['mo_ta'])}">
 <meta property="og:image" content="https://lequydai.com/bai-viet/anh/{b['slug']}.jpg"><meta property="og:type" content="article">
+<link rel="canonical" href="https://lequydai.com/bai-viet/{b['slug']}/"><meta property="og:url" content="https://lequydai.com/bai-viet/{b['slug']}/">
 <link rel="icon" href="/img/cover-square.jpg?v=20261105">{FONT}
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></head>
 <body>{DAU}
@@ -56,6 +59,7 @@ def trang(b):
 <div class="bia"><img src="/bai-viet/anh/{b['slug']}.jpg" alt="{html.escape(b['tieu_de'])}"></div>
 <div class="tra-loi"><b>Trả lời nhanh</b><p>{b['tra_loi']}</p></div>
 {b['than']}
+{o_html('hocthu')}
 {''.join(o_html(k) for k in b['o'])}
 </article>
 <section class="lien-quan"><h2>Bài liên quan</h2><div class="luoi luoi-2">{the}</div></section>
@@ -72,8 +76,9 @@ json.dump([{k: b[k] for k in ('slug', 'bia', 'anh', 'cd')} for b in BAI + KH], o
 loc = ''.join(f'<button data-cd="{c}">{c}</button>' for c in CHU_DE)
 open(f'{D}/index.html', 'w').write(f'''<!DOCTYPE html>
 <html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blog – ĐẠI LÊ AI</title>
-<meta name="description" content="Bài viết dễ làm về AI cho người kinh doanh: công cụ miễn phí, chatbot Zalo, làm video bằng AI, vận hành bằng Agent, Vibe Coding.">
+<title>Blog AI cho người bán hàng online: dễ làm, làm được ngay – ĐẠI LÊ AI</title>
+<meta name="description" content="Bài hướng dẫn dùng ChatGPT hoặc Claude cho người kinh doanh một mình: trả lời khách, viết bài, làm video, làm trang web, chatbot Zalo. Đọc 5 phút, làm được ngay.">
+<link rel="canonical" href="https://lequydai.com/bai-viet/"><meta property="og:title" content="Blog AI cho người bán hàng online – ĐẠI LÊ AI"><meta property="og:description" content="Đọc 5 phút, làm được ngay."><meta property="og:image" content="https://lequydai.com/img/cover-square.jpg"><meta property="og:url" content="https://lequydai.com/bai-viet/">
 <link rel="icon" href="/img/cover-square.jpg?v=20261105">{FONT}</head>
 <body>{DAU}
 <main class="khoi"><div class="khung">
